@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        /*Button sobriety_test_button = (Button) findViewById(R.id.button2);
+        sobriety_test_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {openAnimalTest();};
+        });*/
     }
     public void openDrinkMenu(){
         Intent intent = new Intent(this, DrinkMenu.class);
