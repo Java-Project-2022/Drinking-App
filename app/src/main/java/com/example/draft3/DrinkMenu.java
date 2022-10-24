@@ -14,7 +14,8 @@ public class DrinkMenu extends AppCompatActivity {
         setContentView(R.layout.activity_track_drink);
         Button button4 = (Button) findViewById(R.id.button4);
         button4.setOnClickListener(new View.OnClickListener() {
-            @Override
+
+
             public void onClick(View view) {
                 Constants.drink++;
                 closeDrinkMenu();

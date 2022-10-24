@@ -18,8 +18,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main);
         TextView textView = (TextView) findViewById(R.id.textView3);
-        textView.setText(Integer.toString(drink));
         Button button = (Button) findViewById(R.id.button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+          
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DrinkMenu.class);
+                startActivity(intent);
+            }
+        });
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,11 +37,22 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        /*Button sobriety_test_button = (Button) findViewById(R.id.button2);
+        Button sobriety_test_button = (Button) findViewById(R.id.button2);
         sobriety_test_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {openAnimalTest();};
-        });*/
+            public void onClick(View view) {
+                openDrinkMenu();
+            }
+        });
+
+        Button Help = (Button) findViewById(R.id.button3);
+        Help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDrinkMenu();
+
+            }
+        });
     }
     public void openDrinkMenu(){
         Intent intent = new Intent(this, DrinkMenu.class);
