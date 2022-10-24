@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         sobriety_test_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDrinkMenu();
+                openSobrietyTestMenu();
             }
         });
 
