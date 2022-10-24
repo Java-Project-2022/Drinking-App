@@ -18,32 +18,10 @@
         app:srcCompat="@drawable/my_drinking_buddy__1_" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/sentence_checker"
         android:layout_width="125dp"
         android:layout_height="75dp"
-        android:text="Button"
+        android:text="Sentence Test"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
@@ -55,7 +33,7 @@
         android:id="@+id/image_test"
         android:layout_width="125dp"
         android:layout_height="75dp"
-        android:text="Button"
+        android:text="Image Test"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"

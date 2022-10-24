@@ -1,5 +1,4 @@
 package com.example.draft3;
-import com.example.draft3.Constants;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -22,7 +21,7 @@ public class DrinkMenu extends AppCompatActivity {
             }
 
         });
-        Button button7 = (Button) findViewById(R.id.button7);
+        Button button7 = (Button) findViewById(R.id.image_test);
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,7 +39,7 @@ public class DrinkMenu extends AppCompatActivity {
             }
 
         });
-        Button button6 = (Button) findViewById(R.id.button6);
+        Button button6 = (Button) findViewById(R.id.sentence_checker);
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

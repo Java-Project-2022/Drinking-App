@@ -22,7 +22,7 @@ public class SobrietyTestMenu extends AppCompatActivity {
             }
 
         });
-        Button button10 = (Button) findViewById(R.id.button7);
+        Button button10 = (Button) findViewById(R.id.image_test);
         button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
