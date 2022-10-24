@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DrinkMenu.class);
         startActivity(intent);
     }
+
+    public void openSobrietyTestMenu(){
+        Intent intent = new Intent(this, SobrietyTestMenu.class);
+        startActivity(intent);
+    }
 }
