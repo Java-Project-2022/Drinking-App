@@ -21,15 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
-          
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DrinkMenu.class);
-                startActivity(intent);
-            }
-        });
-
-
-        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDrinkMenu();
