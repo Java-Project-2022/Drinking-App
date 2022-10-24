@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button sobriety_test_button = (Button) findViewById(R.id.button2);
+        Button sobriety_test_button = (Button) findViewById(R.id.button3);
         sobriety_test_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button Help = (Button) findViewById(R.id.button3);
+        Button Help = (Button) findViewById(R.id.button2);
         Help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
