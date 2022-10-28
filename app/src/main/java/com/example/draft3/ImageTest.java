@@ -19,8 +19,7 @@ public class ImageTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         Random rand = new Random();
-        int select_test;// = rand.nextInt(4);
-        select_test = 0;
+        int select_test = rand.nextInt(4);
 
         if(select_test == 0)
         {

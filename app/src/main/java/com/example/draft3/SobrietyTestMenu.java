@@ -17,7 +17,9 @@ public class SobrietyTestMenu extends AppCompatActivity {
 
 
             public void onClick(View view) {
-                closeSobrietyTestMenu();
+                TakeImageTest();
+
+                //we need a function for when we do the sentence checker
             }
 
         });
@@ -25,11 +27,11 @@ public class SobrietyTestMenu extends AppCompatActivity {
         button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                closeSobrietyTestMenu();            }
+                TakeImageTest();            }
 
         });
     }
-    public void closeSobrietyTestMenu(){
+    public void TakeImageTest(){
         Intent intent = new Intent(this, ImageTest.class);
         startActivity(intent);
     }
