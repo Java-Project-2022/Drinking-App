@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = (TextView) findViewById(R.id.textView3);
         Button button = (Button) findViewById(R.id.button);
+        textView.setText(Integer.toString(drink));
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
