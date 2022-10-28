@@ -26,6 +26,7 @@
                 android:value="" />
         </activity>
         <activity android:name=".SobrietyTestMenu"></activity>
+        <activity android:name=".SettingsMenu"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

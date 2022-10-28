@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 openSobrietyTestMenu();
             }
         });
+        ImageButton Settings = (ImageButton) findViewById(R.id.imageButton17);
+        Settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSettingsMenu();
+            }
+        });
     }
     public void openDrinkMenu(){
         Intent intent = new Intent(this, DrinkMenu.class);
@@ -52,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void openSobrietyTestMenu(){
         Intent intent = new Intent(this, SobrietyTestMenu.class);
+        startActivity(intent);
+    }
+    public void openSettingsMenu(){
+        Intent intent = new Intent(this, SettingsMenu.class);
         startActivity(intent);
     }
 }
