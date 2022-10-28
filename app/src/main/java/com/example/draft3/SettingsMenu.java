@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +19,13 @@ public class SettingsMenu extends AppCompatActivity {
                 closeSettingsMenu();
             }
 
+        });
+        ImageButton Home = (ImageButton) findViewById(R.id.imageButton28);
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closeSettingsMenu();
+            }
         });
     }
     public void closeSettingsMenu(){
