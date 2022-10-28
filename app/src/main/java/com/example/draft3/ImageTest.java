@@ -1,6 +1,7 @@
 package com.example.draft3;
 
 import static com.example.draft3.Constants.drink;
+import static com.example.draft3.Constants.image_select;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -20,9 +21,9 @@ public class ImageTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         Random rand = new Random();
-        int select_test = rand.nextInt(6);
+        image_select = rand.nextInt(6);
 
-        if(select_test == 0)
+        if(image_select == 0)
         {
             setContentView(R.layout.animal_test);
             ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
@@ -66,7 +67,7 @@ public class ImageTest extends AppCompatActivity {
                 }
             });
         }
-        else if(select_test == 1)
+        else if(image_select == 1)
         {
             setContentView(R.layout.clothing_test);
             ImageButton imageButton10 = (ImageButton) findViewById(R.id.imageButton10);
@@ -111,7 +112,7 @@ public class ImageTest extends AppCompatActivity {
             });
 
         }
-        else if(select_test == 2)
+        else if(image_select == 2)
         {
             setContentView(R.layout.fruit_test);
 
@@ -156,7 +157,7 @@ public class ImageTest extends AppCompatActivity {
                 }
             });
         }
-        else if(select_test == 3)
+        else if(image_select == 3)
         {
             setContentView(R.layout.shape_test);
 
@@ -201,7 +202,7 @@ public class ImageTest extends AppCompatActivity {
                 }
             });
         }
-        else if(select_test == 4)
+        else if(image_select == 4)
         {
             setContentView(R.layout.color_test);
 
