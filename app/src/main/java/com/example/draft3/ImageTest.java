@@ -39,7 +39,7 @@ public class ImageTest extends AppCompatActivity {
                 public void onClick(View view) {
                     //whatever image does
                     TextView textView5 = (TextView) findViewById(R.id.textView5);
-                    textView5.setText("Incorrect");
+                    textView5.setText("Incorrect! Try Again!");
                 }
             });
 
@@ -48,7 +48,7 @@ public class ImageTest extends AppCompatActivity {
                 public void onClick(View view) {
                     //whatever image does
                     TextView textView5 = (TextView) findViewById(R.id.textView5);
-                    textView5.setText("Incorrect");
+                    textView5.setText("Incorrect! Try Again!");
                 }
             });
 
@@ -57,7 +57,7 @@ public class ImageTest extends AppCompatActivity {
                 public void onClick(View view) {
                     //whatever image does
                     TextView textView5 = (TextView) findViewById(R.id.textView5);
-                    textView5.setText("Incorrect");
+                    textView5.setText("Incorrect! Try Again!");
                 }
             });
         }
@@ -68,6 +68,8 @@ public class ImageTest extends AppCompatActivity {
             imageButton10.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever image does
+                    TextView textView6 = (TextView) findViewById(R.id.textView6);
+                    textView6.setText("Incorrect! Try Again!");
                 }
             });
 
@@ -75,6 +77,8 @@ public class ImageTest extends AppCompatActivity {
             imageButton9.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever image does
+                    TextView textView6 = (TextView) findViewById(R.id.textView6);
+                    textView6.setText("Incorrect! Try Again!");
                 }
             });
 
@@ -82,6 +86,8 @@ public class ImageTest extends AppCompatActivity {
             imageButton12.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever image does
+                    TextView textView6 = (TextView) findViewById(R.id.textView6);
+                    textView6.setText("Incorrect! Try Again!");
                 }
             });
 
@@ -89,6 +95,8 @@ public class ImageTest extends AppCompatActivity {
             imageButton11.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever image does
+                    TextView textView6 = (TextView) findViewById(R.id.textView6);
+                    textView6.setText("Correct!");
                 }
             });
 
