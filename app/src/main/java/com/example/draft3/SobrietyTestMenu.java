@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class SobrietyTestMenu extends AppCompatActivity {
     @Override
@@ -30,9 +31,20 @@ public class SobrietyTestMenu extends AppCompatActivity {
                 TakeImageTest();            }
 
         });
+        ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closeSobrietyTestMenu();
+            }
+        });
     }
     public void TakeImageTest(){
         Intent intent = new Intent(this, ImageTest.class);
         startActivity(intent);
+    }
+    public void closeSobrietyTestMenu(){
+        Intent intent1 = new Intent(this, MainActivity.class);
+        startActivity(intent1);
     }
 }
