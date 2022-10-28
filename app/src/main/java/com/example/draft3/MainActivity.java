@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button sobriety_test_button = (Button) findViewById(R.id.button3);
+        Button sobriety_test_button = (Button) findViewById(R.id.button2);
         sobriety_test_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button Help = (Button) findViewById(R.id.button2);
+        Button Help = (Button) findViewById(R.id.button3);
         Help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openSobrietyTestMenu();
+                openHelpScreen();
             }
         });
         ImageButton Settings = (ImageButton) findViewById(R.id.imageButton17);
@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openSettingsMenu(){
         Intent intent = new Intent(this, SettingsMenu.class);
+        startActivity(intent);
+    }
+    public void openHelpScreen(){
+        Intent intent = new Intent(this, HelpScreen.class);
         startActivity(intent);
     }
 }
