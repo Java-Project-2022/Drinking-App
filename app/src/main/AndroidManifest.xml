@@ -28,6 +28,8 @@
         <activity android:name=".SobrietyTestMenu"></activity>
         <activity android:name=".SettingsMenu"></activity>
         <activity android:name=".HelpScreen"></activity>
+        <activity android:name=".ImageTest"></activity>
+        <activity android:name=".SecondTest"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -1,10 +1,13 @@
 package com.example.draft3;
 
+import static com.example.draft3.Constants.drink;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -16,7 +19,8 @@ public class ImageTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         Random rand = new Random();
-        int select_test = rand.nextInt(4);
+        int select_test;// = rand.nextInt(4);
+        select_test = 0;
 
         if(select_test == 0)
         {
@@ -25,6 +29,9 @@ public class ImageTest extends AppCompatActivity {
             imageButton2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever the image does
+                    TextView textView5 = (TextView) findViewById(R.id.textView5);
+                    textView5.setText("Correct!");
+                    nextTest();
                 }
             });
 
@@ -32,6 +39,8 @@ public class ImageTest extends AppCompatActivity {
             imageButton.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever image does
+                    TextView textView5 = (TextView) findViewById(R.id.textView5);
+                    textView5.setText("Incorrect");
                 }
             });
 
@@ -39,6 +48,8 @@ public class ImageTest extends AppCompatActivity {
             imageButton4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever image does
+                    TextView textView5 = (TextView) findViewById(R.id.textView5);
+                    textView5.setText("Incorrect");
                 }
             });
 
@@ -46,6 +57,8 @@ public class ImageTest extends AppCompatActivity {
             imageButton3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View view) {
                     //whatever image does
+                    TextView textView5 = (TextView) findViewById(R.id.textView5);
+                    textView5.setText("Incorrect");
                 }
             });
         }
@@ -146,28 +159,9 @@ public class ImageTest extends AppCompatActivity {
             });
         }
 
-
-
-        //setContentView(R.layout.select_sobriety_test);
-        Button button40 = (Button) findViewById(R.id.sentence_checker);
-        button40.setOnClickListener(new View.OnClickListener() {
-
-
-            public void onClick(View view) {
-                closeSobrietyTestMenu();
-            }
-
-        });
-        Button button10 = (Button) findViewById(R.id.image_test);
-        button10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                closeSobrietyTestMenu();            }
-
-        });
     }
-    public void closeSobrietyTestMenu(){
-        Intent intent = new Intent(this, MainActivity.class);
+    public void nextTest(){
+        Intent intent = new Intent(this, SecondTest.class);
         startActivity(intent);
     }
 }

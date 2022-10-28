@@ -30,7 +30,7 @@ public class SobrietyTestMenu extends AppCompatActivity {
         });
     }
     public void closeSobrietyTestMenu(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ImageTest.class);
         startActivity(intent);
     }
 }
