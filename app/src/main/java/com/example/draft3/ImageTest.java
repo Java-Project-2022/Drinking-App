@@ -52,15 +52,98 @@ public class ImageTest extends AppCompatActivity {
         else if(select_test == 1)
         {
             setContentView(R.layout.clothing_test);
+            ImageButton imageButton10 = (ImageButton) findViewById(R.id.imageButton10);
+            imageButton10.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton9 = (ImageButton) findViewById(R.id.imageButton9);
+            imageButton9.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton12 = (ImageButton) findViewById(R.id.imageButton12);
+            imageButton12.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton11 = (ImageButton) findViewById(R.id.imageButton11);
+            imageButton11.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
 
         }
         else if(select_test == 2)
         {
             setContentView(R.layout.fruit_test);
+
+            ImageButton imageButton5 = (ImageButton) findViewById(R.id.imageButton5);
+            imageButton5.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton6 = (ImageButton) findViewById(R.id.imageButton6);
+            imageButton6.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton7 = (ImageButton) findViewById(R.id.imageButton7);
+            imageButton7.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton8 = (ImageButton) findViewById(R.id.imageButton8);
+            imageButton8.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
         }
         else
         {
             setContentView(R.layout.shape_test);
+
+            ImageButton imageButton13 = (ImageButton) findViewById(R.id.imageButton13);
+            imageButton13.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton14 = (ImageButton) findViewById(R.id.imageButton14);
+            imageButton14.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton15 = (ImageButton) findViewById(R.id.imageButton15);
+            imageButton15.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
+
+            ImageButton imageButton16 = (ImageButton) findViewById(R.id.imageButton16);
+            imageButton16.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View view) {
+                    //whatever image does
+                }
+            });
         }
 
 
