@@ -19,25 +19,27 @@
 
     <ImageButton
         android:id="@+id/imageButton18"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bed"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="170dp"
         android:layout_height="189dp"
+        android:background="#FEFEFE"
         android:contentDescription="Bed Picture"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.59"
+        app:srcCompat="@drawable/bed" />
 
     <ImageButton
         android:id="@+id/imageButton19"
-        android:scaleType="fitCenter"
         android:layout_width="170dp"
         android:layout_height="189dp"
+        android:background="#FEFEFE"
         android:contentDescription="Chair Picture"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.066"
@@ -48,10 +50,11 @@
 
     <ImageButton
         android:id="@+id/imageButton20"
-        android:scaleType="fitCenter"
         android:layout_width="170dp"
         android:layout_height="189dp"
+        android:background="#FEFEFE"
         android:contentDescription="Couch Picture"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
@@ -62,17 +65,18 @@
 
     <ImageButton
         android:id="@+id/imageButton21"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/table"
         android:layout_width="170dp"
         android:layout_height="189dp"
+        android:background="#FEFEFE"
         android:contentDescription="Table Picture"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/table" />
 
     <TextView
         android:id="@+id/textView8"

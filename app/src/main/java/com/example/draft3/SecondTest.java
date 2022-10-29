@@ -223,7 +223,7 @@ public class SecondTest extends AppCompatActivity {
                 @SuppressLint("SetTextI18n")
                 public void onClick(View view) {
                     //whatever image does
-                    TextView textView10 = (TextView) findViewById(R.id.textView9);
+                    TextView textView10 = (TextView) findViewById(R.id.textView10);
                     textView10.setText("Incorrect! Try Again!");
                 }
             });
@@ -233,7 +233,7 @@ public class SecondTest extends AppCompatActivity {
                 @SuppressLint("SetTextI18n")
                 public void onClick(View view) {
                     //whatever image does
-                    TextView textView10 = (TextView) findViewById(R.id.textView9);
+                    TextView textView10 = (TextView) findViewById(R.id.textView10);
                     textView10.setText("Correct!");
                     closeImageTest();
                 }
@@ -244,7 +244,7 @@ public class SecondTest extends AppCompatActivity {
                 @SuppressLint("SetTextI18n")
                 public void onClick(View view) {
                     //whatever image does
-                    TextView textView10 = (TextView) findViewById(R.id.textView9);
+                    TextView textView10 = (TextView) findViewById(R.id.textView10);
                     textView10.setText("Incorrect! Try Again!");
                 }
             });
@@ -258,7 +258,7 @@ public class SecondTest extends AppCompatActivity {
                 @SuppressLint("SetTextI18n")
                 public void onClick(View view) {
                     //whatever image does
-                    TextView textView8 = (TextView) findViewById(R.id.textView9);
+                    TextView textView8 = (TextView) findViewById(R.id.textView8);
                     textView8.setText("Incorrect! Try Again!");
                 }
             });
@@ -268,7 +268,7 @@ public class SecondTest extends AppCompatActivity {
                 @SuppressLint("SetTextI18n")
                 public void onClick(View view) {
                     //whatever image does
-                    TextView textView8 = (TextView) findViewById(R.id.textView9);
+                    TextView textView8 = (TextView) findViewById(R.id.textView8);
                     textView8.setText("Incorrect! Try Again!");
                 }
             });
@@ -278,7 +278,7 @@ public class SecondTest extends AppCompatActivity {
                 @SuppressLint("SetTextI18n")
                 public void onClick(View view) {
                     //whatever image does
-                    TextView textView8 = (TextView) findViewById(R.id.textView9);
+                    TextView textView8 = (TextView) findViewById(R.id.textView8);
                     textView8.setText("Incorrect! Try Again!");
                 }
             });
@@ -288,7 +288,7 @@ public class SecondTest extends AppCompatActivity {
                 @SuppressLint("SetTextI18n")
                 public void onClick(View view) {
                     //whatever image does
-                    TextView textView8 = (TextView) findViewById(R.id.textView9);
+                    TextView textView8 = (TextView) findViewById(R.id.textView8);
                     textView8.setText("Correct!");
                     closeImageTest();
                 }
