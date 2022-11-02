@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/nice_background"
     tools:context=".MainActivity">
 
     <Button
@@ -22,9 +22,10 @@
         android:id="@+id/imageView"
         android:layout_width="257dp"
         android:layout_height="79dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:contentDescription="@string/App_Logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/my_drinking_buddy__1_" />
@@ -48,7 +49,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/poor_story"
         android:text="@string/Warning"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +102,7 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/untitled_design"
+        app:srcCompat="@drawable/gear_icon_setting"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

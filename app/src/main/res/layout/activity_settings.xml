@@ -21,9 +21,11 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="325dp"
-        android:layout_height="162dp"
-        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/App_Logo"
+        android:layout_width="346dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/poor_story"
         android:text="@string/Disclaimer"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,15 +34,15 @@
 
     <ImageButton
         android:id="@+id/imageButton28"
-        android:layout_width="81dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="59dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
         android:background="#000000"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_button"
+        app:srcCompat="@drawable/home_icon"
         tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
