@@ -37,4 +37,13 @@
     <string name="bed_picture">Bed Picture</string>
     <string name="chair_picture">Chair Picture</string>
     <string name="couch_picture">Couch Picture</string>
+    <string name="Settings_age_static_display">Age:</string>
+    <string name="Settings_age">Unknown</string>
+    <string name="Settings_weight_static_display">Weight:</string>
+    <string name="Settings_weight">Unknown</string>
+    <string name="Settings_height_static_display">Height:</string>
+    <string name="Settings_height">Unknown</string>
+    <string name="Settings_gender_static_display">Gender:</string>
+    <string name="Settings_gender">Unknown</string>
+
 </resources>
