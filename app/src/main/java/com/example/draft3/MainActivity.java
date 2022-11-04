@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = (TextView) findViewById(R.id.textView3);
         Button button = (Button) findViewById(R.id.button);
-        textView.setText(Integer.toString(drink));
+        textView.setText(Double.toString(CalcService.BAC) + "%");
 
         button.setOnClickListener(view -> openDrinkMenu());
 
