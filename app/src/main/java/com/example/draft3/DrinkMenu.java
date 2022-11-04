@@ -11,12 +11,14 @@ public class DrinkMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_drink);
+
         Button button4 = (Button) findViewById(R.id.button4);
         button4.setOnClickListener(new View.OnClickListener() {
 
 
             public void onClick(View view) {
                 Constants.drink++;
+                CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
                 closeDrinkMenu();
             }
 
@@ -26,6 +28,7 @@ public class DrinkMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Constants.drink++;
+                CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
                 closeDrinkMenu();
             }
 
@@ -35,6 +38,7 @@ public class DrinkMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Constants.drink++;
+                CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
                 closeDrinkMenu();
             }
 
@@ -44,6 +48,7 @@ public class DrinkMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Constants.drink++;
+                CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
                 closeDrinkMenu();
             }
 
