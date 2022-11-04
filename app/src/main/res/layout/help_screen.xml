@@ -31,5 +31,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_icon"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/uber"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="356dp"
+        android:text="@string/parking"
+        app:layout_constraintBottom_toTopOf="@+id/button20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="181dp"
+        android:text="@string/_911"
+        app:layout_constraintBottom_toTopOf="@+id/button20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

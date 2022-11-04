@@ -1,6 +1,7 @@
 package com.example.draft3;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,7 +40,7 @@ public class WordTest extends AppCompatActivity {
             TextView textView21 = (TextView) findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
-                nextTest();
+                Test2();
             } else {
                 textView21.setText("Incorrect!  Try Again!");
             }
@@ -47,9 +48,9 @@ public class WordTest extends AppCompatActivity {
     }
 
     @SuppressLint("SetTextI18n")
-    public void nextTest(){
+    public void Test2(){
         Random rand = new Random();
-        int length = 5 + rand.nextInt(10);
+        int length = 10 + rand.nextInt(5);
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < length; i++) {
@@ -66,10 +67,42 @@ public class WordTest extends AppCompatActivity {
             TextView textView21 = (TextView) findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
-               //nextTest();
+               Test3();
             } else {
                 textView21.setText("Incorrect!  Try Again!");
             }
         });
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void Test3() {
+        Random rand = new Random();
+        int length = 15 + rand.nextInt(5);
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            character_select = rand.nextInt(42);
+            sb.append(characters[character_select]);
+        }
+        word = sb.toString();
+        TextView textView20 = (TextView) findViewById(R.id.textView20);
+        textView20.setText(word);
+        EditText random_word = (EditText) findViewById(R.id.random_word);
+        Button button6 = (Button) findViewById(R.id.button6);
+        button6.setOnClickListener(v -> {
+            user_word = random_word.getText().toString();
+            TextView textView21 = (TextView) findViewById(R.id.textView21);
+            if (Objects.equals(user_word, word)) {
+                textView21.setText("Correct!");
+                closeWordTest();
+            } else {
+                textView21.setText("Incorrect!  Try Again!");
+            }
+        });
+    }
+
+    public void closeWordTest(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
