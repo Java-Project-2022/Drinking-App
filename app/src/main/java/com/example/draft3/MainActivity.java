@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 openSettingsMenu();
             }
         });
+
     }
     public void openDrinkMenu(){
         Intent intent = new Intent(this, DrinkMenu.class);
