@@ -8,33 +8,31 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SettingsMenu extends AppCompatActivity {
+public class EditScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
-        Button button8 = (Button) findViewById(R.id.button8);
-        button8.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                openEditScreen();
-            }
-
+        setContentView(R.layout.activity_settings_edit);
+        Button button6 = (Button) findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {closeSettingsEditMenu();}
         });
         ImageButton Home = (ImageButton) findViewById(R.id.imageButton28);
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                closeSettingsMenu();
+            public void onClick(View view) {closeToHomeMenu();
             }
         });
     }
-    public void closeSettingsMenu(){
+    public void closeSettingsEditMenu() {
+        Intent intent = new Intent(this, SettingsMenu.class);
+        startActivity(intent);
+    }
+
+    public void closeToHomeMenu() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-    public void openEditScreen(){
-        Intent intent = new Intent(this, EditScreen.class);
-        startActivity(intent);
-    }
 }
+
 
