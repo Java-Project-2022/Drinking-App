@@ -15,19 +15,9 @@ public class HelpScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.help_screen);
         Button button20 = (Button) findViewById(R.id.button20);
-        button20.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                closeHelpScreen();
-            }
-
-        });
+        button20.setOnClickListener(view -> closeHelpScreen());
         ImageButton Home = (ImageButton) findViewById(R.id.imageButton27);
-        Home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                closeHelpScreen();
-            }
-        });
+        Home.setOnClickListener(view -> closeHelpScreen());
     }
     public void closeHelpScreen(){
         Intent intent = new Intent(this, MainActivity.class);

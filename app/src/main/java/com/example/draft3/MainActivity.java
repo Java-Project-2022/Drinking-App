@@ -4,6 +4,7 @@ import static com.example.draft3.Constants.drink;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,36 +24,15 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.button);
         textView.setText(Integer.toString(drink));
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openDrinkMenu();
-            }
-
-        });
+        button.setOnClickListener(view -> openDrinkMenu());
 
         Button sobriety_test_button = (Button) findViewById(R.id.button2);
-        sobriety_test_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSobrietyTestMenu();
-            }
-        });
+        sobriety_test_button.setOnClickListener(view -> openSobrietyTestMenu());
 
         Button Help = (Button) findViewById(R.id.button3);
-        Help.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openHelpScreen();
-            }
-        });
+        Help.setOnClickListener(view -> openHelpScreen());
         ImageButton Settings = (ImageButton) findViewById(R.id.imageButton17);
-        Settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSettingsMenu();
-            }
-        });
+        Settings.setOnClickListener(view -> openSettingsMenu());
 
     }
     public void openDrinkMenu(){

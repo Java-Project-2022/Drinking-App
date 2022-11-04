@@ -14,19 +14,9 @@ public class SettingsMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         Button button8 = (Button) findViewById(R.id.button8);
-        button8.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                openEditScreen();
-            }
-
-        });
+        button8.setOnClickListener(view -> openEditScreen());
         ImageButton Home = (ImageButton) findViewById(R.id.imageButton28);
-        Home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                closeSettingsMenu();
-            }
-        });
+        Home.setOnClickListener(view -> closeSettingsMenu());
     }
     public void closeSettingsMenu(){
         Intent intent = new Intent(this, MainActivity.class);
