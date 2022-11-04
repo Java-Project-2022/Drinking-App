@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class DrinkMenu extends AppCompatActivity {
     @Override
@@ -52,6 +53,13 @@ public class DrinkMenu extends AppCompatActivity {
                 closeDrinkMenu();
             }
 
+        });
+        ImageButton Home = (ImageButton) findViewById(R.id.imageButton28);
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closeDrinkMenu();
+            }
         });
     }
     public void closeDrinkMenu(){
