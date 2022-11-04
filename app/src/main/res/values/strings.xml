@@ -45,5 +45,7 @@
     <string name="Settings_height">Unknown</string>
     <string name="Settings_gender_static_display">Gender:</string>
     <string name="Settings_gender">Unknown</string>
+    <string name="type_the_following_text">Type the following text:</string>
+    <string name="type_here">Type here...</string>
 
 </resources>
