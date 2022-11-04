@@ -40,9 +40,11 @@ public class WordTest extends AppCompatActivity {
             TextView textView21 = (TextView) findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
+                random_word.setText("");
                 Test2();
             } else {
                 textView21.setText("Incorrect!  Try Again!");
+                random_word.setText("");
             }
         });
     }
@@ -67,9 +69,11 @@ public class WordTest extends AppCompatActivity {
             TextView textView21 = (TextView) findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
+                random_word.setText("");
                Test3();
             } else {
                 textView21.setText("Incorrect!  Try Again!");
+                random_word.setText("");
             }
         });
     }
@@ -94,9 +98,11 @@ public class WordTest extends AppCompatActivity {
             TextView textView21 = (TextView) findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
+                random_word.setText("");
                 closeWordTest();
             } else {
                 textView21.setText("Incorrect!  Try Again!");
+                random_word.setText("");
             }
         });
     }
