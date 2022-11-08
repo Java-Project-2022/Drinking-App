@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
-
+    android:background="@drawable/bg_for_sobriety_test">
+<!--edit button-->
+    <!--home button-->
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/buttonEDIT"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:fontFamily="sans-serif-black"
@@ -17,63 +18,92 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <ImageButton
         android:id="@+id/imageButton27"
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:layout_marginTop="4dp"
-        android:background="#000000"
+        android:background="#55000000"
+        android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_icon"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/todo" />
+        tools:ignore="SpeakableTextPresentCheck" />
+    <!--Uber Button-->
+    <!--    <Button-->
+    <!--        android:id="@+id/button7"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="161dp"-->
+    <!--        android:layout_marginTop="102dp"-->
+    <!--        android:layout_marginEnd="162dp"-->
+    <!--        android:layout_marginBottom="52dp"-->
+    <!--        android:text="@string/uber"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/button9"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="102dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="52dp"
-        android:text="@string/uber"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="356dp"
-        android:text="@string/parking"
-        app:layout_constraintBottom_toTopOf="@+id/button20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+    <!--    uber image button-->
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="181dp"
-        android:text="@string/_911"
-        app:layout_constraintBottom_toTopOf="@+id/button20"
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/imageButtonPARKINGSIGN"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/button20"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.509"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageButtonUBER_BUTTON"-->
+    <!--        app:srcCombat="@drawable/parking_sign_button" />-->
+
+<!-- Uber button-->
+    <ImageButton
+        android:id="@+id/imageButtonUBER_BUTTON"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="#55000000"
+        android:contentDescription="@string/uber"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonPARKINGSIGN"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/uber_button" />
+<!--parking sign-->
+    <!-- Police sign-->
+    <ImageButton
+        android:id="@+id/imageButtonPARKINGSIGN"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="156dp"
+        android:background="#55000000"
+        android:contentDescription="@string/parking"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/policeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303"
+        app:srcCompat="@drawable/parking_sign_button" />
+
+    <ImageButton
+        android:id="@+id/policeButton"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="148dp"
+        android:background="#55000000"
+        android:contentDescription="@string/_911"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEDIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/popo_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

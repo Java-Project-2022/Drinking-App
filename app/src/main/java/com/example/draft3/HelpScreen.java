@@ -14,7 +14,9 @@ public class HelpScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.help_screen);
-        Button button20 = (Button) findViewById(R.id.button20);
+        ImageButton button_police = (ImageButton) findViewById(R.id.policeButton);
+        button_police.setOnClickListener(view-> closeHelpScreen());
+        Button button20 = (Button) findViewById(R.id.buttonEDIT);
         button20.setOnClickListener(view -> closeHelpScreen());
         ImageButton Home = (ImageButton) findViewById(R.id.imageButton27);
         Home.setOnClickListener(view -> closeHelpScreen());
