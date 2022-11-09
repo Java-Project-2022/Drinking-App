@@ -1,5 +1,5 @@
 package com.example.draft3;
-
+//this is a test comment
 //holds the drink information to be accessed by the service
 public class CalcData {
     //initialize array and drink variables
