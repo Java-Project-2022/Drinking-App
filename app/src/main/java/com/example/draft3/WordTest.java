@@ -31,13 +31,13 @@ public class WordTest extends AppCompatActivity {
             sb.append(characters[character_select]);
         }
         word = sb.toString();
-        TextView textView20 = (TextView) findViewById(R.id.textView20);
+        TextView textView20 = findViewById(R.id.textView20);
         textView20.setText(word);
-        EditText random_word = (EditText) findViewById(R.id.random_word);
-        Button button6 = (Button) findViewById(R.id.button6);
+        EditText random_word = findViewById(R.id.random_word);
+        Button button6 = findViewById(R.id.button6);
         button6.setOnClickListener(v -> {
             user_word = random_word.getText().toString();
-            TextView textView21 = (TextView) findViewById(R.id.textView21);
+            TextView textView21 = findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
                 random_word.setText("");
@@ -60,13 +60,13 @@ public class WordTest extends AppCompatActivity {
             sb.append(characters[character_select]);
         }
         word = sb.toString();
-        TextView textView20 = (TextView) findViewById(R.id.textView20);
+        TextView textView20 = findViewById(R.id.textView20);
         textView20.setText(word);
-        EditText random_word = (EditText) findViewById(R.id.random_word);
-        Button button6 = (Button) findViewById(R.id.button6);
+        EditText random_word = findViewById(R.id.random_word);
+        Button button6 = findViewById(R.id.button6);
         button6.setOnClickListener(v -> {
             user_word = random_word.getText().toString();
-            TextView textView21 = (TextView) findViewById(R.id.textView21);
+            TextView textView21 = findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
                 random_word.setText("");
@@ -89,13 +89,13 @@ public class WordTest extends AppCompatActivity {
             sb.append(characters[character_select]);
         }
         word = sb.toString();
-        TextView textView20 = (TextView) findViewById(R.id.textView20);
+        TextView textView20 = findViewById(R.id.textView20);
         textView20.setText(word);
-        EditText random_word = (EditText) findViewById(R.id.random_word);
-        Button button6 = (Button) findViewById(R.id.button6);
+        EditText random_word = findViewById(R.id.random_word);
+        Button button6 = findViewById(R.id.button6);
         button6.setOnClickListener(v -> {
             user_word = random_word.getText().toString();
-            TextView textView21 = (TextView) findViewById(R.id.textView21);
+            TextView textView21 = findViewById(R.id.textView21);
             if (Objects.equals(user_word, word)) {
                 textView21.setText("Correct!");
                 random_word.setText("");
