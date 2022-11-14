@@ -16,6 +16,10 @@ public class HelpScreen extends AppCompatActivity {
         setContentView(R.layout.help_screen);
         ImageButton button_police = (ImageButton) findViewById(R.id.policeButton);
         button_police.setOnClickListener(view-> closeHelpScreen());
+        ImageButton button_parking = (ImageButton) findViewById(R.id.imageButtonPARKINGSIGN);
+        button_parking.setOnClickListener(view-> closeHelpScreen());
+        ImageButton button_uber = (ImageButton) findViewById(R.id.imageButtonUBER_BUTTON);
+        button_uber.setOnClickListener(view-> closeHelpScreen());
         Button edit = (Button) findViewById(R.id.buttonEDIT);
         edit.setOnClickListener(view -> openEditScreen());
 
