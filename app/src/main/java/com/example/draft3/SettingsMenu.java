@@ -2,7 +2,6 @@ package com.example.draft3;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -13,9 +12,9 @@ public class SettingsMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        Button button8 = (Button) findViewById(R.id.button8);
+        Button button8 = findViewById(R.id.button8);
         button8.setOnClickListener(view -> openEditScreen());
-        ImageButton Home = (ImageButton) findViewById(R.id.imageButton28);
+        ImageButton Home = findViewById(R.id.imageButton28);
         Home.setOnClickListener(view -> closeSettingsMenu());
     }
     public void closeSettingsMenu(){
