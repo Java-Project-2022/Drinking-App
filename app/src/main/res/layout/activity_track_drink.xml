@@ -6,11 +6,27 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
+    <!--    <Button-->
+<!--        android:id="@+id/sentence_checker"-->
+<!--        android:layout_width="125dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        android:text="Button"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.25"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.25" />-->
+
+<!--CHAMPAGNE BUTTON-->
+
+    <!--cocktail Button-->
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="257dp"
         android:layout_height="79dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="@string/App_Logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,51 +37,61 @@
         android:id="@+id/button4"
         android:layout_width="125dp"
         android:layout_height="75dp"
-        android:text="Button"
+        android:text="@string/Done_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="125dp"
         android:layout_height="75dp"
-        android:text="Button"
+        android:text="@string/Done_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/sentence_checker"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.443" />
 
-    <Button
+    <ImageButton
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="152dp"
+        android:background="#000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/champagne"
+
+        android:contentDescription="@string/wine" />
+
+
+    <ImageButton
         android:id="@+id/image_test"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
-        android:text="Button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="#000000"
+        android:src="@drawable/coco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.279"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.634"
+        android:contentDescription="@string/champagne_button" />
+
     <ImageButton
         android:id="@+id/imageButton28"
-        android:layout_width="59dp"
-        android:layout_height="46dp"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
         android:layout_marginTop="28dp"
         android:background="#000000"
         android:scaleType="centerCrop"
@@ -74,6 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_icon"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        android:contentDescription="@string/home_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,7 @@
     <string name="app_name">Draft3</string>
     <string name="Track_Drink">Track Drink</string>
     <string name="App_Logo">My Drinking App Logo</string>
-    <string name="BAC_Percent">0.08%</string>
+    <string name="BAC_Percent">68.1%</string>
     <string name="Warning">*Your BAC percentage is based on calculation and might be off</string>
     <string name="Tests">Sobriety Test</string>
     <string name="Help">Help</string>
@@ -55,5 +55,8 @@
     <string name="parking">Parking</string>
     <string name="uber">Uber</string>
     <string name="todo">TODO</string>
+    <string name="home_button">Home Button</string>
+    <string name="champagne_button">Champagne Button</string>
+    <string name="wine">WINE</string>
 
 </resources>
