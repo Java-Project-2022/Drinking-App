@@ -33,6 +33,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/my_drinking_buddy__1_" />
 
+
     <Button
         android:id="@+id/button4"
         android:layout_width="125dp"
@@ -40,10 +41,9 @@
         android:text="@string/Done_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.841" />
 
     <Button
         android:id="@+id/button5"
@@ -52,41 +52,40 @@
         android:text="@string/Done_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.445" />
 
     <ImageButton
+        android:id="@+id/imageButton30"
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:layout_marginTop="152dp"
         android:background="#000000"
+        android:contentDescription="@string/wine"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@id/button5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/champagne"
+        app:layout_constraintVertical_bias="0.033"
 
-        android:contentDescription="@string/wine" />
-
+        app:srcCompat="@drawable/champagne" />
 
     <ImageButton
         android:id="@+id/image_test"
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:background="#000000"
+        android:contentDescription="@string/champagne_button"
         android:src="@drawable/coco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634"
-        android:contentDescription="@string/champagne_button" />
+        app:layout_constraintVertical_bias="0.64" />
 
     <ImageButton
         android:id="@+id/imageButton28"

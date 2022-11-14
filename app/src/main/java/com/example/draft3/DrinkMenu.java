@@ -19,7 +19,7 @@ public class DrinkMenu extends AppCompatActivity {
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
             closeDrinkMenu();
         });
-        Button button7 = (Button) findViewById(R.id.image_test);
+        ImageButton button7 = (ImageButton) findViewById(R.id.image_test);
         button7.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
@@ -31,7 +31,7 @@ public class DrinkMenu extends AppCompatActivity {
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
             closeDrinkMenu();
         });
-        Button button6 = (Button) findViewById(R.id.sentence_checker);
+        ImageButton button6 = (ImageButton) findViewById(R.id.imageButton30);
         button6.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
