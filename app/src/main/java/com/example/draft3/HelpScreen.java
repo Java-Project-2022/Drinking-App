@@ -16,10 +16,16 @@ public class HelpScreen extends AppCompatActivity {
         setContentView(R.layout.help_screen);
         ImageButton button_police = (ImageButton) findViewById(R.id.policeButton);
         button_police.setOnClickListener(view-> closeHelpScreen());
-        Button button20 = (Button) findViewById(R.id.buttonEDIT);
-        button20.setOnClickListener(view -> closeHelpScreen());
+        Button edit = (Button) findViewById(R.id.buttonEDIT);
+        edit.setOnClickListener(view -> openEditScreen());
+
+
         ImageButton Home = (ImageButton) findViewById(R.id.imageButton27);
         Home.setOnClickListener(view -> closeHelpScreen());
+    }
+    public void openEditScreen(){
+        Intent intent = new Intent(this, SettingsMenu.class);
+        startActivity(intent);
     }
     public void closeHelpScreen(){
         Intent intent = new Intent(this, MainActivity.class);

@@ -15,7 +15,7 @@ public class EditScreen extends AppCompatActivity {
         Button button6 = (Button) findViewById(R.id.button6);
         button6.setOnClickListener(view -> closeSettingsEditMenu());
         ImageButton Home = (ImageButton) findViewById(R.id.imageButton28);
-        Home.setOnClickListener(view -> closeToHomeMenu());
+        Home.setOnClickListener(view -> closeSettingsEditMenu());
     }
     public void closeSettingsEditMenu() {
         Intent intent = new Intent(this, SettingsMenu.class);
