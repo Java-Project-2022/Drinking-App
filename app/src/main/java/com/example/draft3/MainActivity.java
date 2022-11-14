@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+// Object creations and changes are ordered from top of screen to bottom
+
 public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
@@ -20,10 +22,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TextView that increments by 1 when the user adds a drink
+        // Settings Menu ImageButton
+        ImageButton Settings = (ImageButton) findViewById(R.id.imageButton17);
+        Settings.setOnClickListener(view -> openSettingsMenu());
+
+        // Main BAC display
         // Is set to the current value for BAC in the CalcService class
-        TextView textView = (TextView) findViewById(R.id.textView3);
+        TextView textView = (TextView) findViewById(R.id.textView);
         textView.setText(Double.toString(CalcService.BAC) + "%");
+
+        // TextView that increments by 1 when the user adds a drink
+        TextView textView3 = (TextView) findViewById(R.id.textView3);
+        textView3.setText(Integer.toString(Constants.drink));
+
 
         // Track Drink Menu Button
         Button button = (Button) findViewById(R.id.button);
@@ -37,9 +48,6 @@ public class MainActivity extends AppCompatActivity {
         Button Help = (Button) findViewById(R.id.button3);
         Help.setOnClickListener(view -> openHelpScreen());
 
-        // Settings Menu ImageButton
-        ImageButton Settings = (ImageButton) findViewById(R.id.imageButton17);
-        Settings.setOnClickListener(view -> openSettingsMenu());
 
     }
     // UDF that takes the user to the track drink screen

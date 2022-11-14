@@ -30,7 +30,6 @@ public class CalcData {
         for(int i=0; i<30; i++) {
             myArray[i] += toAdd;
         }
-
     };
 }
 

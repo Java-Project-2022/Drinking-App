@@ -2,7 +2,7 @@ package com.example.draft3;
 
 public class CalcService {
     //bac running total variable
-    static double BAC = 0.0;
+    static double BAC = 0.00;
     //constant decrement per minute
     final static double decrement = 0.025f;
 
