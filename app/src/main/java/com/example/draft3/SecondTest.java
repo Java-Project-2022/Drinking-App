@@ -5,6 +5,7 @@ import static com.example.draft3.Constants.image_select;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -27,6 +28,13 @@ public class SecondTest extends AppCompatActivity {
         if(second_image_test == 0)
         {
             setContentView(R.layout.animal_test);
+
+            ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+            Home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {closeImageTest();}
+            });
+
             ImageButton imageButton2 = findViewById(R.id.imageButton2);
             imageButton2.setOnClickListener(view -> {
                 //whatever the image does
@@ -59,6 +67,13 @@ public class SecondTest extends AppCompatActivity {
         else if(second_image_test == 1)
         {
             setContentView(R.layout.clothing_test);
+
+            ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+            Home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {closeImageTest();}
+            });
+
             ImageButton imageButton10 = findViewById(R.id.imageButton10);
             imageButton10.setOnClickListener(view -> {
                 //whatever image does
@@ -93,6 +108,12 @@ public class SecondTest extends AppCompatActivity {
         {
             setContentView(R.layout.fruit_test);
 
+            ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+            Home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {closeImageTest();}
+            });
+
             ImageButton imageButton5 = findViewById(R.id.imageButton5);
             imageButton5.setOnClickListener(view -> {
                 //whatever image does
@@ -125,6 +146,12 @@ public class SecondTest extends AppCompatActivity {
         else if(second_image_test == 3)
         {
             setContentView(R.layout.shape_test);
+
+            ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+            Home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {closeImageTest();}
+            });
 
             ImageButton imageButton13 = findViewById(R.id.imageButton13);
             imageButton13.setOnClickListener(view -> {
@@ -159,6 +186,12 @@ public class SecondTest extends AppCompatActivity {
         {
             setContentView(R.layout.color_test);
 
+            ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+            Home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {closeImageTest();}
+            });
+
             ImageButton imageButton22 = findViewById(R.id.imageButton22);
             imageButton22.setOnClickListener(view -> {
                 //whatever image does
@@ -191,6 +224,12 @@ public class SecondTest extends AppCompatActivity {
         else
         {
             setContentView(R.layout.furtinture_test);
+
+            ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+            Home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {closeImageTest();}
+            });
 
             ImageButton imageButton18 = findViewById(R.id.imageButton18);
             imageButton18.setOnClickListener(view -> {

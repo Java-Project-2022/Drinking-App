@@ -3,8 +3,10 @@ package com.example.draft3;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Objects;
@@ -22,6 +24,13 @@ public class WordTest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.spelling_test);
+
+        ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {closeWordTest();}
+        });
+
         Random rand = new Random();
         int length = 5 + rand.nextInt(5);
         StringBuilder sb = new StringBuilder();
