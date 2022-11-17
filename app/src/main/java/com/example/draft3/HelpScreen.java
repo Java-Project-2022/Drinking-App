@@ -27,9 +27,6 @@ public class HelpScreen extends AppCompatActivity {
         ImageButton button_uber = (ImageButton) findViewById(R.id.imageButtonUBER_BUTTON);
         button_uber.setOnClickListener(view-> closeHelpScreen());
 
-        // Edit Button
-        Button edit = (Button) findViewById(R.id.buttonEDIT);
-        edit.setOnClickListener(view -> openEditScreen());
 
         // Home button to take the user back to the Main Activity
         ImageButton Home = (ImageButton) findViewById(R.id.imageButton27);
