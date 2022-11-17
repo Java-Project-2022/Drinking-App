@@ -92,21 +92,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.289" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:contentDescription="point_finge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pointy_thing_icon"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="224dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.498"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.289"/>
-
     <ImageButton
         android:id="@+id/imageButton26"
         android:layout_width="59dp"
