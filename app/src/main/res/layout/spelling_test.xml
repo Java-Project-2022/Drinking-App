@@ -94,6 +94,7 @@
         android:layout_marginEnd="176dp"
         android:layout_marginBottom="238dp"
         android:text=""
+        android:gravity="center"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

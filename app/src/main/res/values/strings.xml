@@ -61,5 +61,6 @@
     <string name="cocktail">Cocktail</string>
     <string name="champagne">Champagne</string>
     <string name="beer">Beer</string>
+    <string name="word_test">word test</string>
 
 </resources>

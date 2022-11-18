@@ -13,7 +13,7 @@ public class CalcData {
     static double genderConstant = 0.0;
 
     public static void addDrink(int weight,char gender,double drinkOz,double drinkAlc) {
-        double toAdd = 0.0;
+        double toAdd;
         if(gender == 'F') {
             genderConstant = 0.55;
         }
@@ -30,7 +30,7 @@ public class CalcData {
         for(int i=0; i<30; i++) {
             myArray[i] += toAdd;
         }
-    };
+    }
 }
 
 

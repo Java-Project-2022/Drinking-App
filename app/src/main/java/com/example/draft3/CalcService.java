@@ -29,7 +29,8 @@ public class CalcService {
                 else {
                     flag = 0;
                 }
-            } else {
+            }
+            else {
                 //decrement
                 BAC -= decrement;
                 //check static array pos and update
@@ -40,9 +41,7 @@ public class CalcService {
 
             //left shift array contents and initialize pos 29 to 0
             //update array for next iteration
-            for (int i = 0; i < 29; i++) {
-                CalcData.myArray[i] = CalcData.myArray[i + 1];
-            }
+            System.arraycopy(CalcData.myArray, 1, CalcData.myArray, 0, 29);
             CalcData.myArray[29] = 0.0f;
         }
     }
