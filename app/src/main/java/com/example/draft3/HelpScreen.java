@@ -39,7 +39,7 @@ public class HelpScreen extends AppCompatActivity {
         layout.addView(requestButton);
         // Police button
         ImageButton button_police = (ImageButton) findViewById(R.id.policeButton);
-        button_police.setOnClickListener(view-> closeHelpScreen());
+        button_police.setOnClickListener(view-> PhoneCall());
 
         // Parking Button
         ImageButton button_parking = (ImageButton) findViewById(R.id.imageButtonPARKINGSIGN);
@@ -59,7 +59,11 @@ public class HelpScreen extends AppCompatActivity {
     }
     // UDF to take the user back to Main
     public void closeHelpScreen(){
-        Uri number = Uri.parse("tel:1234567891");
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+    public void PhoneCall(){
+        Uri number = Uri.parse("tel:911");
         Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
         {
