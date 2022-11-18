@@ -1,6 +1,8 @@
 package com.example.draft3;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +17,7 @@ import com.uber.sdk.core.client.SessionConfiguration;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import java.util.Arrays;
 
@@ -56,9 +59,12 @@ public class HelpScreen extends AppCompatActivity {
     }
     // UDF to take the user back to Main
     public void closeHelpScreen(){
-        Uri number = Uri.parse("tel:5551234");
+        Uri number = Uri.parse("tel:1234567891");
         Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
+        {
+            return;
+        }
+        startActivity(callIntent);
     }
 }
