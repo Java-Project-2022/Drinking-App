@@ -58,5 +58,8 @@
     <string name="home_button">Home Button</string>
     <string name="champagne_button">Champagne Button</string>
     <string name="wine">WINE</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="champagne">Champagne</string>
+    <string name="beer">Beer</string>
 
 </resources>

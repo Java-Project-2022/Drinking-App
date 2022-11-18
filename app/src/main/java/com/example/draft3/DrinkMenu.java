@@ -2,6 +2,7 @@ package com.example.draft3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,7 +34,7 @@ public class DrinkMenu extends AppCompatActivity {
         });
 
         // Upper "Done" Button
-        Button button5 = (Button) findViewById(R.id.button5);
+        ImageButton button5 = (ImageButton) findViewById(R.id.imageButton5);
         button5.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
@@ -49,7 +50,7 @@ public class DrinkMenu extends AppCompatActivity {
         });
 
         // Lower "Done" Button
-        Button button4 = (Button) findViewById(R.id.button4);
+        ImageButton button4 = (ImageButton) findViewById(R.id.imageButton4);
         button4.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);

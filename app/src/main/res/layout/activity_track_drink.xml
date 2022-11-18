@@ -4,23 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
-
-    <!--    <Button-->
-<!--        android:id="@+id/sentence_checker"-->
-<!--        android:layout_width="125dp"-->
-<!--        android:layout_height="75dp"-->
-<!--        android:text="Button"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.25"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.25" />-->
-
-<!--CHAMPAGNE BUTTON-->
-
-    <!--cocktail Button-->
+    android:background="@drawable/activity_drink_trac">
+    <!--    my drinking button title button-->
 
     <ImageView
         android:id="@+id/imageView3"
@@ -34,72 +19,171 @@
         app:srcCompat="@drawable/my_drinking_buddy__1_" />
 
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
-        android:text="@string/Done_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
+    <!--wine image button below-->
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
-        android:text="@string/Done_button"
+
+    <TextView
+        android:id="@+id/textviewWineButton"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginBottom="479dp"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:includeFontPadding="true"
+        android:text="@string/champagne"
+        android:textColor="#A59FF3"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="152dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/wine"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintVertical_bias="0.776"
+        app:srcCompat="@drawable/wine" />
+
+    <!--beer IMAGE BUTTON -->
+
+    <TextView
+        android:id="@+id/textviewBEERButton"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="108dp"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:includeFontPadding="true"
+        android:text="@string/wine"
+        android:textColor="#A59FF3"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="152dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/wine"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26"
+        app:srcCompat="@drawable/beer" />
+
+    <!--champagne IMAGE BUTTON-->
+    <!--coctail-->
+
+    <TextView
+        android:id="@+id/textviewChampagne"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="458dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="229dp"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:includeFontPadding="true"
+        android:text="@string/cocktail"
+        android:textColor="#A59FF3"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton30"
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:layout_marginTop="152dp"
-        android:background="#000000"
+        android:background="#00FFFFFF"
         android:contentDescription="@string/wine"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@id/button5"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033"
-
+        app:layout_constraintVertical_bias="0.031"
         app:srcCompat="@drawable/champagne" />
+
+    <TextView
+        android:id="@+id/textviewCocktail"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="265dp"
+        android:layout_marginBottom="357dp"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:includeFontPadding="true"
+        android:text="@string/beer"
+        android:textColor="#A59FF3"
+        android:textColorHighlight="@color/black"
+
+        android:textColorLink="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/image_test"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:background="#000000"
+        android:background="#00000000"
         android:contentDescription="@string/champagne_button"
         android:src="@drawable/coco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.639" />
 
     <ImageButton
         android:id="@+id/imageButton28"
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/home_button"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_icon"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        android:contentDescription="@string/home_button" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="textviewWineButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
