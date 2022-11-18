@@ -25,35 +25,47 @@ public class DrinkMenu extends AppCompatActivity {
             }
         });
 
-        // Upper ImageButton
+        // Champagne Button
         ImageButton button6 = (ImageButton) findViewById(R.id.imageButton30);
         button6.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            if(CalcService.loopActive == 0) {
+                CalcService.bacLoop();
+            }
             closeDrinkMenu();
         });
 
-        // Upper "Done" Button
+        // Beer Button
         ImageButton button5 = (ImageButton) findViewById(R.id.imageButton5);
         button5.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            if(CalcService.loopActive == 0) {
+                CalcService.bacLoop();
+            }
             closeDrinkMenu();
         });
 
-        // Lower ImageButton
+        // Cocktail Button
         ImageButton button7 = (ImageButton) findViewById(R.id.image_test);
         button7.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            if(CalcService.loopActive == 0) {
+                CalcService.bacLoop();
+            }
             closeDrinkMenu();
         });
 
-        // Lower "Done" Button
+        // Custom Button (currently Wine)
         ImageButton button4 = (ImageButton) findViewById(R.id.imageButton4);
         button4.setOnClickListener(view -> {
             Constants.drink++;
             CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            if(CalcService.loopActive == 0) {
+                CalcService.bacLoop();
+            }
             closeDrinkMenu();
         });
     }
