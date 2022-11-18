@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:uber="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg_for_sobriety_test">
 <!--edit button-->
     <!--home button-->
@@ -50,20 +51,7 @@
     <!--        app:srcCombat="@drawable/parking_sign_button" />-->
 
 <!-- Uber button-->
-    <ImageButton
-        android:id="@+id/imageButtonUBER_BUTTON"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/uber"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonPARKINGSIGN"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/uber_button" />
-<!--parking sign-->
+    <!--parking sign-->
     <!-- Police sign-->
 
     <ImageButton
@@ -95,4 +83,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/popo_button" />
+
+    <com.uber.sdk.android.rides.RideRequestButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"
+        uber:ub__style="black" />
 </androidx.constraintlayout.widget.ConstraintLayout>
