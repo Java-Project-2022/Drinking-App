@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +13,20 @@ public class SettingsMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        TextView textViewG = (TextView) findViewById(R.id.textView11);
+        if(SettingsData.gender == 'M') {
+            textViewG.setText("Male");
+        }
+        else if(SettingsData.gender == 'F') {
+            textViewG.setText("Female");
+        }
+        else {
+            textViewG.setText("Unknown");
+        }
+
+        TextView textViewW = (TextView) findViewById(R.id.textView13);
+        textViewW.setText("Unknown");
 
         // Edit button that takes the user to the edit screen for settings
         Button button8 = findViewById(R.id.button8);
