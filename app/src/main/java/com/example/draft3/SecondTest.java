@@ -30,14 +30,11 @@ public class SecondTest extends AppCompatActivity {
             setContentView(R.layout.animal_test);
 
             ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
-            Home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {closeImageTest();}
-            });
+            Home.setOnClickListener(view -> closeImageTest());
 
             ImageButton imageButton2 = findViewById(R.id.imageButton2);
             imageButton2.setOnClickListener(view -> {
-                //whatever the image does
+                //cow image
                 TextView textView5 = findViewById(R.id.textView5);
                 textView5.setText("Correct!");
                 closeImageTest();
@@ -45,21 +42,21 @@ public class SecondTest extends AppCompatActivity {
 
             ImageButton imageButton = findViewById(R.id.imageButton);
             imageButton.setOnClickListener(view -> {
-                //whatever image does
+                //cat image
                 TextView textView5 = findViewById(R.id.textView5);
                 textView5.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton4 = findViewById(R.id.imageButton4);
             imageButton4.setOnClickListener(view -> {
-                //whatever image does
+                //dog image
                 TextView textView5 = findViewById(R.id.textView5);
                 textView5.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton3 = findViewById(R.id.imageButton3);
             imageButton3.setOnClickListener(view -> {
-                //whatever image does
+                //squirrel image
                 TextView textView5 = findViewById(R.id.textView5);
                 textView5.setText("Incorrect! Try Again!");
             });
@@ -69,35 +66,32 @@ public class SecondTest extends AppCompatActivity {
             setContentView(R.layout.clothing_test);
 
             ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
-            Home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {closeImageTest();}
-            });
+            Home.setOnClickListener(view -> closeImageTest());
 
             ImageButton imageButton10 = findViewById(R.id.imageButton10);
             imageButton10.setOnClickListener(view -> {
-                //whatever image does
+                //shirt image
                 TextView textView6 = findViewById(R.id.textView6);
                 textView6.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton9 = findViewById(R.id.imageButton9);
             imageButton9.setOnClickListener(view -> {
-                //whatever image does
+                //pants image
                 TextView textView6 = findViewById(R.id.textView6);
                 textView6.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton12 = findViewById(R.id.imageButton12);
             imageButton12.setOnClickListener(view -> {
-                //whatever image does
+                //sock image
                 TextView textView6 = findViewById(R.id.textView6);
                 textView6.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton11 = findViewById(R.id.imageButton11);
             imageButton11.setOnClickListener(view -> {
-                //whatever image does
+                //shoes image
                 TextView textView6 = findViewById(R.id.textView6);
                 textView6.setText("Correct!");
                 closeImageTest();
@@ -109,21 +103,18 @@ public class SecondTest extends AppCompatActivity {
             setContentView(R.layout.fruit_test);
 
             ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
-            Home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {closeImageTest();}
-            });
+            Home.setOnClickListener(view -> closeImageTest());
 
             ImageButton imageButton5 = findViewById(R.id.imageButton5);
             imageButton5.setOnClickListener(view -> {
-                //whatever image does
+                //apple image
                 TextView textView7 = findViewById(R.id.textView7);
                 textView7.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton6 = findViewById(R.id.imageButton6);
             imageButton6.setOnClickListener(view -> {
-                //whatever image does
+                //grapes image
                 TextView textView7 = findViewById(R.id.textView7);
                 textView7.setText("Correct!");
                 closeImageTest();
@@ -131,14 +122,14 @@ public class SecondTest extends AppCompatActivity {
 
             ImageButton imageButton7 = findViewById(R.id.imageButton7);
             imageButton7.setOnClickListener(view -> {
-                //whatever image does
+                //peach image
                 TextView textView7 = findViewById(R.id.textView7);
                 textView7.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton8 = findViewById(R.id.imageButton8);
             imageButton8.setOnClickListener(view -> {
-                //whatever image does
+                //pineapple image
                 TextView textView7 = findViewById(R.id.textView7);
                 textView7.setText("Incorrect! Try Again!");
             });
@@ -148,14 +139,11 @@ public class SecondTest extends AppCompatActivity {
             setContentView(R.layout.shape_test);
 
             ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
-            Home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {closeImageTest();}
-            });
+            Home.setOnClickListener(view -> closeImageTest());
 
             ImageButton imageButton13 = findViewById(R.id.imageButton13);
             imageButton13.setOnClickListener(view -> {
-                //whatever image does
+                //circle image
                 TextView textView9 = findViewById(R.id.textView9);
                 textView9.setText("Correct!");
                 closeImageTest();
@@ -163,21 +151,21 @@ public class SecondTest extends AppCompatActivity {
 
             ImageButton imageButton14 = findViewById(R.id.imageButton14);
             imageButton14.setOnClickListener(view -> {
-                //whatever image does
+                //octogon image
                 TextView textView9 = findViewById(R.id.textView9);
                 textView9.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton15 = findViewById(R.id.imageButton15);
             imageButton15.setOnClickListener(view -> {
-                //whatever image does
+                //square image
                 TextView textView9 = findViewById(R.id.textView9);
                 textView9.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton16 = findViewById(R.id.imageButton16);
             imageButton16.setOnClickListener(view -> {
-                //whatever image does
+                //triangle image
                 TextView textView9 = findViewById(R.id.textView9);
                 textView9.setText("Incorrect! Try Again!");
             });
@@ -187,28 +175,25 @@ public class SecondTest extends AppCompatActivity {
             setContentView(R.layout.color_test);
 
             ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
-            Home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {closeImageTest();}
-            });
+            Home.setOnClickListener(view -> closeImageTest());
 
             ImageButton imageButton22 = findViewById(R.id.imageButton22);
             imageButton22.setOnClickListener(view -> {
-                //whatever image does
+                //blue image
                 TextView textView10 = findViewById(R.id.textView9);
                 textView10.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton23 = findViewById(R.id.imageButton23);
             imageButton23.setOnClickListener(view -> {
-                //whatever image does
+                //orange image
                 TextView textView10 = findViewById(R.id.textView10);
                 textView10.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton24 = findViewById(R.id.imageButton24);
             imageButton24.setOnClickListener(view -> {
-                //whatever image does
+                //purple image
                 TextView textView10 = findViewById(R.id.textView10);
                 textView10.setText("Correct!");
                 closeImageTest();
@@ -216,7 +201,7 @@ public class SecondTest extends AppCompatActivity {
 
             ImageButton imageButton25 = findViewById(R.id.imageButton25);
             imageButton25.setOnClickListener(view -> {
-                //whatever image does
+                //yellow image
                 TextView textView10 = findViewById(R.id.textView10);
                 textView10.setText("Incorrect! Try Again!");
             });
@@ -226,35 +211,32 @@ public class SecondTest extends AppCompatActivity {
             setContentView(R.layout.furtinture_test);
 
             ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
-            Home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {closeImageTest();}
-            });
+            Home.setOnClickListener(view -> closeImageTest());
 
             ImageButton imageButton18 = findViewById(R.id.imageButton18);
             imageButton18.setOnClickListener(view -> {
-                //whatever image does
+                //bed image
                 TextView textView8 = findViewById(R.id.textView8);
                 textView8.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton19 = findViewById(R.id.imageButton19);
             imageButton19.setOnClickListener(view -> {
-                //whatever image does
+                //chair image
                 TextView textView8 = findViewById(R.id.textView8);
                 textView8.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton20 = findViewById(R.id.imageButton20);
             imageButton20.setOnClickListener(view -> {
-                //whatever image does
+                //couch image
                 TextView textView8 = findViewById(R.id.textView8);
                 textView8.setText("Incorrect! Try Again!");
             });
 
             ImageButton imageButton21 = findViewById(R.id.imageButton21);
             imageButton21.setOnClickListener(view -> {
-                //whatever image does
+                //table image
                 TextView textView8 = findViewById(R.id.textView8);
                 textView8.setText("Correct!");
                 closeImageTest();
