@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Draft3</string>
+    <string name="app_name">Myapp</string>
     <string name="Track_Drink">Track Drink</string>
     <string name="App_Logo">My Drinking App Logo</string>
     <string name="BAC_Percent">0.00%</string>
@@ -64,5 +64,6 @@
     <string name="champagne">Champagne</string>
     <string name="beer">Beer</string>
     <string name="word_test">word test</string>
+    <string name="MyDrinkingBuddy" />
 
 </resources>

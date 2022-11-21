@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.draft3'
+    namespace 'com.example.MyDrinkingBuddy'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.draft3"
+        applicationId "com.example.MyDrinkingBuddy"
         minSdk 27
         targetSdk 32
         versionCode 1
