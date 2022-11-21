@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
     <application
@@ -13,12 +14,13 @@
         android:supportsRtl="true"
         android:label="MyDrinkingBuddy"
         android:theme="@style/Theme.Draft3"
+        android:largeHeap = "true"
 
         android:killAfterRestore="true"
         android:hardwareAccelerated="true"
         tools:targetApi="31">
 
-        <activity android:name=".DrinkMenu" ></activity>
+        <activity android:name=".DrinkMenu" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -32,15 +34,16 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".MyDrinkingBuddy"></activity>
-        <activity android:name=".SobrietyTestMenu"></activity>
-        <activity android:name=".SettingsMenu"></activity>
-        <activity android:name=".HelpScreen"></activity>
-        <activity android:name=".ImageTest"></activity>
-        <activity android:name=".SecondTest"></activity>
-        <activity android:name=".EditScreen"></activity>
-        <activity android:name=".WordTest"></activity>
-        <activity android:name=".CustomDrink"></activity>
+        <activity android:name=".SobrietyTestMenu" />
+        <activity android:name=".SettingsMenu" />
+        <activity android:name=".HelpScreen" />
+        <activity android:name=".ImageTest" />
+        <activity android:name=".SecondTest" />
+        <activity android:name=".EditScreen" />
+        <activity android:name=".WordTest" />
+        <activity android:name=".CustomDrink" />
+
+        <service android:name=".BACWorker" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

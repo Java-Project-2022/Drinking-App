@@ -8,16 +8,15 @@ import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import com.uber.sdk.android.core.UberSdk;
 import com.uber.sdk.android.rides.RideRequestButton;
 import com.uber.sdk.core.auth.Scope;
 import com.uber.sdk.core.client.SessionConfiguration;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
-import java.util.Arrays;
+import java.util.Collections;
 
 public class HelpScreen extends AppCompatActivity {
     @Override
@@ -28,7 +27,7 @@ public class HelpScreen extends AppCompatActivity {
                 .setClientId("b_Cx4qgi40QhJh4srjBolK1l8plEbV1F")
                 .setServerToken("LH1tcHn5_z-XsRlinz1umc1cv1ZbxnxW4V4w77Hp")
                 .setRedirectUri("")
-                .setScopes(Arrays.asList(Scope.RIDE_WIDGETS))
+                .setScopes(Collections.singletonList(Scope.RIDE_WIDGETS))
                 .setEnvironment(SessionConfiguration.Environment.SANDBOX)
                 .build();
         UberSdk.initialize(sessionConfiguration);
@@ -36,18 +35,18 @@ public class HelpScreen extends AppCompatActivity {
         RelativeLayout layout= new RelativeLayout(this);
         layout.addView(requestButton);
         // Police button
-        ImageButton button_police = (ImageButton) findViewById(R.id.policeButton);
+        ImageButton button_police = findViewById(R.id.policeButton);
         button_police.setOnClickListener(view-> PhoneCall());
 
         // Parking Button
-        ImageButton button_parking = (ImageButton) findViewById(R.id.imageButtonPARKINGSIGN);
+        ImageButton button_parking = findViewById(R.id.imageButtonPARKINGSIGN);
         button_parking.setOnClickListener(view-> closeHelpScreen());
 
         // Uber Button
 
 
         // Home button to take the user back to the Main Activity
-        ImageButton Home = (ImageButton) findViewById(R.id.imageButton27);
+        ImageButton Home = findViewById(R.id.imageButton27);
         Home.setOnClickListener(view -> closeHelpScreen());
     }
     // UDF to take the user to the edit settings screen
