@@ -17,6 +17,7 @@ public class EditScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_edit);
 
+        // Displays current gender held in calculation settings if there is a value, otherwise is set to "Unknown"
         TextView textView22 = (TextView) findViewById(R.id.textView22);
         if(SettingsData.gender == 'M') {
             textView22.setText("Male");
@@ -42,17 +43,19 @@ public class EditScreen extends AppCompatActivity {
             textView22.setText("Female");
         });
 
+        // Displays current weight held in calculation settings if there is a value greater than 0, otherwise displays "Unknown"
         TextView textView14 = (TextView) findViewById(R.id.textView14);
         if(SettingsData.weight < 0) {
             textView14.setText("Unknown");
         }
         else if(SettingsData.weight > 0) {
-            textView14.setText("Number");
+            textView14.setText(Integer.toString(SettingsData.weight));
         }
         else {
             textView14.setText("Unknown");
         }
 
+        // Number box for user input, sends and int to settingsdata and displays results in the above textview
         EditText weightIn = (EditText) findViewById(R.id.weightIn);
         weightIn.setOnKeyListener(new View.OnKeyListener() {
             @Override

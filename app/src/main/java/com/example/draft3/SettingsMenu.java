@@ -14,6 +14,7 @@ public class SettingsMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        // Displays current gender, is an average male by default
         TextView textViewG = (TextView) findViewById(R.id.textView11);
         if(SettingsData.gender == 'M') {
             textViewG.setText("Male");
@@ -25,6 +26,7 @@ public class SettingsMenu extends AppCompatActivity {
             textViewG.setText("Unknown");
         }
 
+        // Displays current weight, is an average male by default
         TextView textViewW = (TextView) findViewById(R.id.textView13);
         if(SettingsData.weight < 0) {
             textViewW.setText("Unknown");
