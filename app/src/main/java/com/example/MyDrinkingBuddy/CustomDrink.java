@@ -17,6 +17,7 @@ public class CustomDrink extends AppCompatActivity {
         setContentView(R.layout.activity_custom_drink);
 
         final double[] oz = {0.00};
+        final double[] tempPercent = {0.00};
         final double[] percent = {0.00};
 
         // Home Button
@@ -60,11 +61,12 @@ public class CustomDrink extends AppCompatActivity {
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
                 if (i == KeyEvent.KEYCODE_ENTER) {
                     String valuePS = weightIn3.getText().toString();
-                    percent[0] = Integer.parseInt(valuePS);
-                    if(percent[0] > 100) {
+                    tempPercent[0] = Integer.parseInt(valuePS);
+                    if(tempPercent[0] > 100) {
                         return false;
                     }
                     else {
+                        percent[0] = Integer.parseInt(valuePS);
                         textView23.setText(valuePS + "%");
                         return true;
                     }
