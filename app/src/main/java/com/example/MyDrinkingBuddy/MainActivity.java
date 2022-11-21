@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Settings Menu ImageButton
-        ImageButton Settings = (ImageButton) findViewById(R.id.imageButton17);
+        ImageButton Settings = findViewById(R.id.imageButton17);
         Settings.setOnClickListener(view -> openSettingsMenu());
 
         // Main BAC display
         // Is set to the current value for BAC in the CalcService class
         TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setText(Double.toString(CalcService.BAC) + "%");
+        textView.setText(CalcService.BAC + "%");
 
         // TextView that increments by 1 when the user adds a drink
         TextView textView3 = (TextView) findViewById(R.id.textView3);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Track Drink Menu Button
-        Button button = (Button) findViewById(R.id.button);
+        Button button = findViewById(R.id.button);
         button.setOnClickListener(view -> openDrinkMenu());
 
         // Sobriety Test Menu Button
