@@ -42,7 +42,7 @@
         <activity android:name=".EditScreen" />
         <activity android:name=".WordTest" />
         <activity android:name=".CustomDrink" />
-
+        <activity android:name=".Info" />
         <service android:name=".BACWorker" />
         <meta-data
             android:name="preloaded_fonts"
