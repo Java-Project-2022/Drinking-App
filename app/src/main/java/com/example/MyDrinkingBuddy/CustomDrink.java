@@ -89,6 +89,7 @@ public class CustomDrink extends AppCompatActivity {
             //if(CalcService.loopActive == 0) {
             //    CalcService.bacLoop();
             //}
+            closeCustomDrinkMenu();
         });
     }
     // UDF to close the current menu, takes user back to Main Screen
