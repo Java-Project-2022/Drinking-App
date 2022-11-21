@@ -47,6 +47,10 @@ public class SettingsMenu extends AppCompatActivity {
         // Home button that takes the user back to the Main Activity
         ImageButton Home = findViewById(R.id.imageButton28);
         Home.setOnClickListener(view -> closeSettingsMenu());
+
+        //
+        ImageButton Credits = findViewById(R.id.infobuttonpress);
+        Credits.setOnClickListener(view -> openInfoScreen());
     }
     // UDF that takes the user back to the main screen
     public void closeSettingsMenu(){
@@ -56,6 +60,11 @@ public class SettingsMenu extends AppCompatActivity {
     // UDF that takes the user to the edit screen
     public void openEditScreen(){
         Intent intent = new Intent(this, EditScreen.class);
+        startActivity(intent);
+    }
+    // UDF that takes the user to the edit screen
+    public void openInfoScreen(){
+        Intent intent = new Intent(this, Info.class);
         startActivity(intent);
     }
 }
