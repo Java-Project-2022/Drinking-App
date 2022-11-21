@@ -65,5 +65,7 @@
     <string name="beer">Beer</string>
     <string name="word_test">word test</string>
     <string name="MyDrinkingBuddy" />
+    <string name="inputvalidation">Please enter value less than 100</string>
+    <string name="inputvalidMsg">Please Enter a Value of 100% or less</string>
 
 </resources>
