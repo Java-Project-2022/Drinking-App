@@ -114,20 +114,28 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="357dp"
-        android:layout_height="91dp"
+        android:layout_width="258dp"
+        android:layout_height="102dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settings_title" />
 
     <ImageButton
-        android:id="@+id/imageButton31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/sym_call_outgoing"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="36dp" />
+        android:id="@+id/infobuttonpress"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/infobutt"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
