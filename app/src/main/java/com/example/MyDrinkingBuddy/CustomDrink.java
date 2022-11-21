@@ -60,9 +60,15 @@ public class CustomDrink extends AppCompatActivity {
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
                 if (i == KeyEvent.KEYCODE_ENTER) {
                     String valuePS = weightIn3.getText().toString();
-                    textView23.setText(valuePS + "%");
                     percent[0] = Integer.parseInt(valuePS);
-                    return true;
+                    if(percent[0] > 100) {
+                        return false;
+                    }
+                    else {
+                        textView23.setText(valuePS + "%");
+                        return true;
+                    }
+
                 }
                 else {
                     return false;
