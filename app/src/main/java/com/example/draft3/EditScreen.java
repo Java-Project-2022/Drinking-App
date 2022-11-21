@@ -2,7 +2,10 @@ package com.example.draft3;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -38,6 +41,35 @@ public class EditScreen extends AppCompatActivity {
             SettingsData.gender = 'F';
             textView22.setText("Female");
         });
+
+        TextView textView14 = (TextView) findViewById(R.id.textView14);
+        if(SettingsData.weight < 0) {
+            textView14.setText("Unknown");
+        }
+        else if(SettingsData.weight > 0) {
+            textView14.setText("Number");
+        }
+        else {
+            textView14.setText("Unknown");
+        }
+
+        EditText weightIn = (EditText) findViewById(R.id.weightIn);
+        weightIn.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+                if (i == KeyEvent.KEYCODE_ENTER) {
+                    String valueWS = weightIn.getText().toString();
+                    int valueWI = Integer.parseInt(valueWS);
+                    textView14.setText(valueWS + " lbs");
+                    SettingsData.weight = valueWI;
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        });
+
 
         // Done button to take the user back to the settings screen
         Button button6 = (Button) findViewById(R.id.button6);

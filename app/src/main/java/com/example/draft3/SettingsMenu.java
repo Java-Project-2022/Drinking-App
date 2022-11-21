@@ -26,7 +26,15 @@ public class SettingsMenu extends AppCompatActivity {
         }
 
         TextView textViewW = (TextView) findViewById(R.id.textView13);
-        textViewW.setText("Unknown");
+        if(SettingsData.weight < 0) {
+            textViewW.setText("Unknown");
+        }
+        else if(SettingsData.weight > 0) {
+            textViewW.setText(Integer.toString(SettingsData.weight) + " lbs");
+        }
+        else {
+            textViewW.setText("Unknown");
+        }
 
         // Edit button that takes the user to the edit screen for settings
         Button button8 = findViewById(R.id.button8);
