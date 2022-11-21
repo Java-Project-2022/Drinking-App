@@ -29,10 +29,10 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button6 = (ImageButton) findViewById(R.id.imageButton30);
         button6.setOnClickListener(view -> {
             Constants.drink++;
-            CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
-            if(CalcService.loopActive == 0) {
-                CalcService.bacLoop();
-            }
+            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            //if(CalcService.loopActive == 0) {
+            //    CalcService.bacLoop();
+            //}
             closeDrinkMenu();
         });
 
@@ -40,7 +40,7 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button5 = (ImageButton) findViewById(R.id.imageButton5);
         button5.setOnClickListener(view -> {
             Constants.drink++;
-            CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
             if(CalcService.loopActive == 0) {
                 CalcService.bacLoop();
             }
@@ -51,7 +51,7 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button7 = (ImageButton) findViewById(R.id.image_test);
         button7.setOnClickListener(view -> {
             Constants.drink++;
-            CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
             if(CalcService.loopActive == 0) {
                 CalcService.bacLoop();
             }
@@ -62,7 +62,7 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button4 = (ImageButton) findViewById(R.id.imageButton4);
         button4.setOnClickListener(view -> {
             Constants.drink++;
-            CalcData.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
+            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
             if(CalcService.loopActive == 0) {
                 CalcService.bacLoop();
             }
