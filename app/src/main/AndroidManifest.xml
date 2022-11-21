@@ -34,6 +34,7 @@
         <activity android:name=".SecondTest"></activity>
         <activity android:name=".EditScreen"></activity>
         <activity android:name=".WordTest"></activity>
+        <activity android:name=".CustomDrink"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

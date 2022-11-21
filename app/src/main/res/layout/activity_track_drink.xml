@@ -68,7 +68,7 @@
         android:layout_marginBottom="108dp"
         android:fontFamily="@font/holtwood_one_sc"
         android:includeFontPadding="true"
-        android:text="@string/wine"
+        android:text="CUSTOM"
         android:textColor="#A59FF3"
         android:textColorHighlight="@color/black"
         android:textColorLink="@color/black"
