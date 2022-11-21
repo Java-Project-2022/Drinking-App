@@ -25,7 +25,7 @@ public class ImageTest extends AppCompatActivity {
         {
             setContentView(R.layout.animal_test);
 
-            ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+            ImageButton Home = findViewById(R.id.imageButton26);
             Home.setOnClickListener(view -> closeImageTest());
 
             ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButton2);

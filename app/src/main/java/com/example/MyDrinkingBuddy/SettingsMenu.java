@@ -1,5 +1,6 @@
 package com.example.MyDrinkingBuddy;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -9,13 +10,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SettingsMenu extends AppCompatActivity {
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
         // Displays current gender, is an average male by default
-        TextView textViewG = (TextView) findViewById(R.id.textView11);
+        TextView textViewG = findViewById(R.id.textView11);
         if(SettingsData.gender == 'M') {
             textViewG.setText("Male");
         }
@@ -27,12 +29,12 @@ public class SettingsMenu extends AppCompatActivity {
         }
 
         // Displays current weight, is an average male by default
-        TextView textViewW = (TextView) findViewById(R.id.textView13);
+        TextView textViewW = findViewById(R.id.textView13);
         if(SettingsData.weight < 0) {
             textViewW.setText("Unknown");
         }
         else if(SettingsData.weight > 0) {
-            textViewW.setText(Integer.toString(SettingsData.weight) + " lbs");
+            textViewW.setText(SettingsData.weight + " lbs");
         }
         else {
             textViewW.setText("Unknown");

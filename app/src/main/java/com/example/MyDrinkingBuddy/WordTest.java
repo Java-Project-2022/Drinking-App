@@ -26,7 +26,7 @@ public class WordTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.spelling_test);
 
-        ImageButton Home = (ImageButton) findViewById(R.id.imageButton26);
+        ImageButton Home = findViewById(R.id.imageButton26);
         Home.setOnClickListener(view -> closeWordTest());
 
         //generate a random number for the length of the random word
