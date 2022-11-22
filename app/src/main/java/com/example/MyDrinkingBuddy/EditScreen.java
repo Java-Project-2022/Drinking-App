@@ -44,7 +44,6 @@ public class EditScreen extends AppCompatActivity {
             textView22.setText("Female");
         });
 
-        // Displays current weight held in calculation settings if there is a value greater than 0, otherwise displays "Unknown"
         TextView textView14 = findViewById(R.id.textView14);
         if(SettingsData.weight < 0) {
             textView14.setText("Unknown");

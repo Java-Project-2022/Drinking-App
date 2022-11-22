@@ -1,19 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_info_screen_scene">
 
     <ImageButton
         android:id="@+id/imageButton31"
-        android:layout_width="59dp"
+        android:layout_width="60dp"
         android:layout_height="54dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="29dp"
         android:background="#00000000"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_icon" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:includeFontPadding="true"
+        android:text="Credits: \tKelly, Abigail, \tHarner,Kassandra,
+        \n                      Sama, Rohini Reddy, \tWooten, Matthew,
+        \n                      Hartsell, Scott, \tBacha, Thomas"
+        android:textColor="#FFFFFF"
+        android:textScaleX="0.75"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton31" />
+
+    <RatingBar
+        android:id="@+id/ratingBar8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF8300"
+        android:rating="2.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar5" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="56dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF8300"
+        android:rating="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="18dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF8300"
+        android:rating="3.5"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar3"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
+
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="18dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF8300"
+        android:rating="3"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar8"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar8" />
+
+    <RatingBar
+        android:id="@+id/ratingBar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="270dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF8300"
+        android:rating="3.5"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="29dp"
+        android:text="Planning"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar5" />
+
+    <RatingBar
+        android:id="@+id/ratingBar9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="12dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF8300"
+        android:rating="4.5"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar2" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="16dp"
+        android:text="Design/Logic"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar8" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="59dp"
+        android:text="Testing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="56dp"
+        android:text="UI/UX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="17dp"
+        android:text="Development"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="68dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="45dp"
+        android:text="Teamwork"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
