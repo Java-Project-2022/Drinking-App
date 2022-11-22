@@ -26,16 +26,7 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button6 = findViewById(R.id.imageButton30);
         button6.setOnClickListener(view -> {
             Constants.drink++;
-            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
-            if(CalcService.loopActive == 0) {
-                WorkRequest uploadWorkRequest =
-                        new OneTimeWorkRequest.Builder(BACWorker.class)
-                                .build();
-                Context mycontext = null;
-                WorkManager
-                        .getInstance(mycontext)
-                        .enqueue(uploadWorkRequest);
-            }
+            DrinkHandler.handleBAC();
             closeDrinkMenu();
         });
 

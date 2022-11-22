@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    public TextView textView;
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Main BAC display
         // Is set to the current value for BAC in the CalcService class
-        TextView textView = (TextView) findViewById(R.id.textView);
+
+        textView = (TextView) findViewById(R.id.textView);
         textView.setText(CalcService.BAC + "%");
 
         // TextView that increments by 1 when the user adds a drink

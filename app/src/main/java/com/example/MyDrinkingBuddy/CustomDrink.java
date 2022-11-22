@@ -21,32 +21,24 @@ public class CustomDrink extends AppCompatActivity {
         final double[] percent = {0.00};
 
         // Home Button
-        ImageButton Home = (ImageButton) findViewById(R.id.imageButton28);
-        Home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                closeCustomDrinkMenu();
-            }
-        });
+        ImageButton Home = findViewById(R.id.imageButton28);
+        Home.setOnClickListener(view -> closeCustomDrinkMenu());
 
         // TextView that displays inputted Oz
-        TextView textView18 = (TextView) findViewById(R.id.textView18);
+        TextView textView18 = findViewById(R.id.textView18);
         textView18.setText(oz[0] + " oz");
 
         // EditText box that takes user input for Oz
         EditText weightIn2 = (EditText) findViewById(R.id.weightIn2);
-        weightIn2.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View view, int i, KeyEvent keyEvent) {
-                if (i == KeyEvent.KEYCODE_ENTER) {
-                    String valueOS = weightIn2.getText().toString();
-                    textView18.setText(valueOS + " oz");
-                    oz[0] = Integer.parseInt(valueOS);
-                    return true;
-                }
-                else {
-                    return false;
-                }
+        weightIn2.setOnKeyListener((view, i, keyEvent) -> {
+            if (i == KeyEvent.KEYCODE_ENTER) {
+                String valueOS = weightIn2.getText().toString();
+                textView18.setText(valueOS + " oz");
+                oz[0] = Integer.parseInt(valueOS);
+                return true;
+            }
+            else {
+                return false;
             }
         });
 
