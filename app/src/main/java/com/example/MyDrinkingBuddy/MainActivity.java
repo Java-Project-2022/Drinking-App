@@ -27,9 +27,15 @@ public class MainActivity extends AppCompatActivity {
         // Main BAC display
         // Is set to the current value for BAC in the CalcService class
 
+        String bac = Double.toString(CalcService.BAC).substring(0,3);
+        //bac = bac + "000";
+        //bac = bac.substring(0,3);
+
         textView = (TextView) findViewById(R.id.textView);
         //needs to bind to BAC variable inside of the service
-        textView.setText(CalcService.BAC + "%");
+        textView.setText(bac + "%");
+
+        //String.format("%.2f%", CalcService.BAC);
 
         // TextView that increments by 1 when the user adds a drink
         TextView textView3 = (TextView) findViewById(R.id.textView3);
@@ -47,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
         // Help Menu Button
         Button Help = (Button) findViewById(R.id.button3);
         Help.setOnClickListener(view -> openHelpScreen());
-
-
 
     }
     // UDF that takes the user to the track drink screen
@@ -71,4 +75,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HelpScreen.class);
         startActivity(intent);
     }
+
 }

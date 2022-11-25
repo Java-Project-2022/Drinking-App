@@ -1,6 +1,11 @@
 package com.example.MyDrinkingBuddy;
 
 public class CalcService {
+
+    //constructor
+    public CalcService() {
+    }
+
     //bac running total variable
     public static double BAC = 0.00;
     //constant decrement per minute
@@ -19,13 +24,12 @@ public class CalcService {
     public static int flag = 1;
     public static int loopActive = 0;
 
+    //format(".2f", BAC);
+    //String mainBAC = Double.toString(BAC);
+
     public static void bacLoop() {
         loopActive = 1;
-        while (flag == 1) {
-            TimingCode timer = new TimingCode(1);
-            loopActive = 1;
-        }
-        loopActive = 0;
+        TimingCode timer = new TimingCode(1);
     }
 
     public static void bacUpdate() {
@@ -34,6 +38,7 @@ public class CalcService {
             //check static array pos and update
             if (bacArray[0] != 0.0f) {
                 BAC += bacArray[0];
+                TimingCode timer = new TimingCode(1);
             }
             //stop service b/c nothing in array and BAC 0
             else {
@@ -42,10 +47,14 @@ public class CalcService {
         } else {
             //decrement
             BAC -= decrement;
+            if(BAC < 0) {
+                BAC = 0;
+            }
             //check static array pos and update
             if (bacArray[0] != 0.0f) {
                 BAC += bacArray[0];
             }
+            TimingCode timer = new TimingCode(1);
         }
 
         //left shift array contents and initialize pos 29 to 0

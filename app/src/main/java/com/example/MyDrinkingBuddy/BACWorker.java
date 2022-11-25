@@ -18,6 +18,7 @@
 //
 //    private NotificationManager notificationManager;
 //
+//    //worker constructor
 //    public BACWorker(
 //            @NonNull Context context,
 //            @NonNull WorkerParameters params) {
@@ -28,6 +29,7 @@
 //
 //    @NonNull
 //    @Override
+//    //defining the work to be done
 //    public Result doWork() {
 //        setForegroundAsync(createForegroundInfo("Progress"));
 //        CalcService.bacLoop();
@@ -36,13 +38,13 @@
 //
 //    @NonNull
 //    private ForegroundInfo createForegroundInfo(@NonNull String progress) {
-//         Build a notification using bytesRead and contentLength
+//         //Build a notification using bytesRead and contentLength
 //
 //        Context context = getApplicationContext();
 //        String id = context.getString(R.string.notification_channel_id);
 //        String title = context.getString(R.string.notification_title);
 //        String cancel = context.getString(R.string.cancel_download);
-//         This PendingIntent can be used to cancel the worker
+//         //This PendingIntent can be used to cancel the worker
 //        PendingIntent intent = WorkManager.getInstance(context)
 //                .createCancelPendingIntent(getId());
 //
@@ -53,6 +55,7 @@
 //        Notification notification = new NotificationCompat.Builder(context, id)
 //                .setContentTitle(title)
 //                .setTicker(title)
+//                //need small icon in drawables
 //                .setSmallIcon(R.drawable.ic_work_notification)
 //                .setOngoing(true)
 //                // Add the cancel action to the notification which can
