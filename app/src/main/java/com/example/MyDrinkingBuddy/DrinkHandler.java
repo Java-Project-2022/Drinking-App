@@ -1,4 +1,4 @@
-package com.example.MyDrinkingBuddy;
+/*package com.example.MyDrinkingBuddy;
 
 import static com.example.MyDrinkingBuddy.CalcService.BAC;
 
@@ -17,3 +17,4 @@ public class DrinkHandler {
         myMain.textView.setText(Double.toString(BAC));
     }
 }
+*/

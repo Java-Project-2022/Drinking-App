@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         // Is set to the current value for BAC in the CalcService class
 
         textView = (TextView) findViewById(R.id.textView);
+        //needs to bind to BAC variable inside of the service
         textView.setText(CalcService.BAC + "%");
 
         // TextView that increments by 1 when the user adds a drink
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // Help Menu Button
         Button Help = (Button) findViewById(R.id.button3);
         Help.setOnClickListener(view -> openHelpScreen());
+
 
 
     }
