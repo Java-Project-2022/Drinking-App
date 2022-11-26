@@ -1,14 +1,6 @@
 
-#Drinking-APP
--------------
-# *Deadline:* 
-> 11/21/2022
-## Days left: 
-> 10/24 - 10/26 <br>
-> 10/31 - 11/2  <br>
-> 11/7  - 11/9  <br>
-> 11/14 - 11/16 <br> 
-> 11/21 
+
+#THE BIG DAY IS UPON US>
 ---------------------
 <p class="has-line-data" data-line-start="1" data-line-end="13"><br>
 CSCI 3033 Group Project Fall 2022<br>
