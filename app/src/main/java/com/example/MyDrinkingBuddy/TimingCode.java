@@ -4,20 +4,25 @@ import java.util.TimerTask;
 
 public class TimingCode {
 
+    //create timer variable
     Timer timer;
 
     public TimingCode(int seconds) {
-        timer = new Timer(); //creates new timer object
-        //sets a new timer to end at 1 * 300000(milliseconds) = 5 minutes, in which a new EndTimeTask sub-class obj will be created
+        //create timer object
+        timer = new Timer();
+        //sets a new timer to end at 1 * milliseconds
+        //upon end of timer, create a new EndTimeTask
         timer.schedule(new EndTimeTask(), seconds*1000);
     }
 
     public class EndTimeTask extends TimerTask {
-        //Custom sub-class of "timingCode", the run method will contain the code that performs the task to be done once the timer is finished
+        //once created, calls the run() method
+        //that calls bacUpdate().  bacUpdate will
+        //either create a new timer thread or stop.
+        //this current timer thread will then stop.
         public void run() {
             //actions to be taken at end of timer
             CalcService.bacUpdate();
-
             timer.cancel(); // stops the timer thread
         }
     }
