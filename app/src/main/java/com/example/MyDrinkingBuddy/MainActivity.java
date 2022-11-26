@@ -24,22 +24,13 @@ public class MainActivity extends AppCompatActivity {
         ImageButton Settings = findViewById(R.id.imageButton17);
         Settings.setOnClickListener(view -> openSettingsMenu());
 
-        // Main BAC display
-        // Is set to the current value for BAC in the CalcService class
-
-        String bac = Double.toString(CalcService.BAC).substring(0,3);
-        //bac = bac + "000";
-        //bac = bac.substring(0,3);
-
+        // Display current blood alcohol level
         textView = (TextView) findViewById(R.id.textView);
-        //needs to bind to BAC variable inside of the service
-        textView.setText(bac + "%");
-
-        //String.format("%.2f%", CalcService.BAC);
+        textView.setText(String.format("%.2f", CalcService.BAC) + "%");
 
         // TextView that increments by 1 when the user adds a drink
         TextView textView3 = (TextView) findViewById(R.id.textView3);
-        textView3.setText(Integer.toString(Constants.drink));
+        textView3.setText("Your No. of Drinks Tonight: " + Integer.toString(Constants.drink));
 
 
         // Track Drink Menu Button

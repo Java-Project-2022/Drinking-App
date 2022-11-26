@@ -21,14 +21,14 @@ public class CalcService {
     //gender constants
     public static double genderConstant = 0.0;
 
-    public static int flag = 1;
-    public static int loopActive = 0;
+    //public static int flag = 1;
+    public static int threadActive = 0;
 
     //format(".2f", BAC);
     //String mainBAC = Double.toString(BAC);
 
-    public static void bacLoop() {
-        loopActive = 1;
+    public static void bacThread() {
+        threadActive = 1;
         TimingCode timer = new TimingCode(1);
     }
 
@@ -42,11 +42,14 @@ public class CalcService {
             }
             //stop service b/c nothing in array and BAC 0
             else {
-                flag = 0;
+                //flag = 0;
+                threadActive = 0;
+                Constants.drink = 0;
             }
         } else {
             //decrement
             BAC -= decrement;
+            //protection in the case that bac would become a negative val
             if(BAC < 0) {
                 BAC = 0;
             }
@@ -75,7 +78,7 @@ public class CalcService {
         }
 
         //calculate how much to add to each partition of array
-        toAdd = ((drinkAlc * drinkOz * ozToGrams) / (weight * lbsToGrams * genderConstant)) / 30;
+        toAdd = (((drinkAlc/100) * drinkOz * ozToGrams) / (weight * lbsToGrams * genderConstant)) / 30;
         //get true percentage
         toAdd = toAdd * 10000;
 

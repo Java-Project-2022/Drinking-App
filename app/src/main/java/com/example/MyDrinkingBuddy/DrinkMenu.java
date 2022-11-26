@@ -26,9 +26,9 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button6 = findViewById(R.id.imageButton30);
         button6.setOnClickListener(view -> {
             Constants.drink++;
-            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
-            if(CalcService.loopActive == 0) {
-                CalcService.bacLoop();
+            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 5);
+            if(CalcService.threadActive == 0) {
+                CalcService.bacThread();
             }
             closeDrinkMenu();
         });
@@ -37,11 +37,10 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button5 = findViewById(R.id.imageButton5);
         button5.setOnClickListener(view -> {
             Constants.drink++;
-            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
-            System.out.println("hey");
-            //if(CalcService.loopActive == 0) {
-            //    CalcService.bacLoop();
-            //}
+            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 5);
+            if(CalcService.threadActive == 0) {
+                CalcService.bacThread();
+            }
             closeDrinkMenu();
         });
 
@@ -49,10 +48,10 @@ public class DrinkMenu extends AppCompatActivity {
         ImageButton button7 = findViewById(R.id.image_test);
         button7.setOnClickListener(view -> {
             Constants.drink++;
-            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 0.05);
-            //if(CalcService.loopActive == 0) {
-            //    CalcService.bacLoop();
-            //}
+            CalcService.addDrink(SettingsData.weight, SettingsData.gender, 12, 5);
+            if(CalcService.threadActive == 0) {
+                CalcService.bacThread();
+            }
             closeDrinkMenu();
         });
 

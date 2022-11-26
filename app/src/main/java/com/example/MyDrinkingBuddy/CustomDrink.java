@@ -78,9 +78,9 @@ public class CustomDrink extends AppCompatActivity {
         button4.setOnClickListener(view -> {
             Constants.drink++;
             CalcService.addDrink(SettingsData.weight, SettingsData.gender, oz[0], percent[0]);
-            //if(CalcService.loopActive == 0) {
-            //    CalcService.bacLoop();
-            //}
+            if(CalcService.threadActive == 0) {
+                CalcService.bacThread();
+            }
             closeCustomDrinkMenu();
         });
     }
