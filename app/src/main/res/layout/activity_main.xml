@@ -86,9 +86,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poor_story"
-        android:textSize="20sp"
         android:textColor="@color/purple_200"
         android:textColorHighlight="@color/material_dynamic_tertiary100"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,5 +111,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gear_icon_setting"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/sync"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:background="#00000000"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sync" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
