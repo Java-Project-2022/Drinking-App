@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Display current blood alcohol level
         textView = (TextView) findViewById(R.id.textView);
-        textView.setText(String.format("%.002f", CalcService.BAC) + "%");
+        textView.setText(String.format("%.3f", CalcService.BAC) + "%");
 
         // TextView that increments by 1 when the user adds a drink
         TextView textView3 = (TextView) findViewById(R.id.textView3);

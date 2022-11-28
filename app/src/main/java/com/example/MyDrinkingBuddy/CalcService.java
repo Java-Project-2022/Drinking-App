@@ -4,7 +4,7 @@ public class CalcService {
     //bac running total variable
     public static double BAC = 0.00;
     //constant decrement per minute
-    public final static double decrement = 0.025f;
+    public final static double decrement = 0.00025f;
 
     //initialize array and drink variables
     public static double[] bacArray = new double[30];
@@ -95,7 +95,7 @@ public class CalcService {
         //calculate how much to add to each partition of array, 30 total positions for 30 minutes
         toAdd = (((drinkAlc/100) * drinkOz * ozToGrams) / (weight * lbsToGrams * genderConstant)) / 30;
         //get true percentage
-        toAdd = toAdd * 10000;
+        toAdd = toAdd * 100;
 
         //add to each partition of the array
         for (int i = 0; i < 30; i++) {
