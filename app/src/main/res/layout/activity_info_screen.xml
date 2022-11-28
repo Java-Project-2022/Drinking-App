@@ -15,7 +15,8 @@
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_icon" />
+        app:srcCompat="@drawable/home_icon"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView25"
@@ -28,7 +29,7 @@
         android:fontFamily="@font/alfa_slab_one"
         android:includeFontPadding="true"
         android:lineSpacingExtra="2sp"
-        android:text="Credits:\n\nAbigail Kelly\n\tKassandra Harner\n\tRohini Reddy Sama\n\tMatthew Wooten\n\tScott Hartsell\n\tThomas Bacha\nDr. Rafet Al-Tobasei"
+        android:text="Credits:\n\nAbigail Kelly\n\tKassandra Harner\n\tRohini Reddy Sama\n\tMatthew Wooten\n\tScott Hartsell\n\tThomas Bacha"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
