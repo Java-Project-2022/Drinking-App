@@ -12,7 +12,7 @@ public class TimingCode {
         timer = new Timer();
         //sets a new timer to end at 1 * milliseconds
         //upon end of timer, create a new EndTimeTask
-        timer.schedule(new EndTimeTask(), seconds*1000);
+        timer.schedule(new EndTimeTask(), seconds*5000);
     }
 
     public class EndTimeTask extends TimerTask {
