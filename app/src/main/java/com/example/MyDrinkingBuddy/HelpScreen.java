@@ -40,7 +40,7 @@ public class HelpScreen extends AppCompatActivity {
 
         // Parking Button
         ImageButton button_parking = findViewById(R.id.imageButtonPARKINGSIGN);
-        button_parking.setOnClickListener(view-> closeHelpScreen());
+        button_parking.setOnClickListener(view-> openMap());
 
         // Uber Button
 
@@ -67,5 +67,9 @@ public class HelpScreen extends AppCompatActivity {
             return;
         }
         startActivity(callIntent);
+    }
+    public void openMap(){
+        Intent intent = new Intent(this,MapsActivity.class);
+        startActivity(intent);
     }
 }
