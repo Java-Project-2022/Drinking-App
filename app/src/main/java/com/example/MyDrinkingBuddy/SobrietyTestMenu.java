@@ -7,6 +7,8 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// This Activity allows the user to choose between an image test and a word test
+
 public class SobrietyTestMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

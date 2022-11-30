@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// Displays all App Developer names and a small self-rating on how the app was made
+
 public class Info  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

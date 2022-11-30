@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+
+// Main/Home Screen of the app. Shows the user's current BAC according to calculations made,
+// and gives user's access to the other menus using imagebuttons and buttons
 // Object creations and changes are ordered from top of screen to bottom
 
 public class MainActivity extends AppCompatActivity {

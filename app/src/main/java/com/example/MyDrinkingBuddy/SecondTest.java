@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
+// Second test for image test that is access in the event that the first test was passed
+
 public class SecondTest extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     @Override

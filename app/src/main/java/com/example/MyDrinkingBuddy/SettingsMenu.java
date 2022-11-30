@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// Displays currently used demographic data for calculations, displays a disclaimer, and allows a user to access the info screen
+
 public class SettingsMenu extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     @Override

@@ -12,6 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
+// Tests the user's ability to differentiate between different objects
+// Cycles through two different tests which are randomly chosen
+
 public class ImageTest extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     @Override

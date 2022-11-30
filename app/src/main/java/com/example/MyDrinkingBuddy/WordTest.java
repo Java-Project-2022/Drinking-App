@@ -13,6 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Objects;
 import java.util.Random;
 
+// Word test that generates a random string for the user to re-enter into a textbox
+// Strings get longer progressively over a period of 3 tests
+
 public class WordTest extends AppCompatActivity {
     String user_word;
     char[] characters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',

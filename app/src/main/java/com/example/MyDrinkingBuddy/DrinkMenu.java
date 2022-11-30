@@ -10,6 +10,8 @@ import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkManager;
 import androidx.work.WorkRequest;
 
+// This Activity is the menu where the user can select any of the default drinks to add to their
+// current BAC totals, or select the custom drink to take them to the corresponding activity
 // Object creations and changes are ordered from top of screen to bottom
 
 public class DrinkMenu extends AppCompatActivity {

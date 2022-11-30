@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// This Activity allows the user to change the gender and weight variables being used in their calculations
+
 public class EditScreen extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     @Override

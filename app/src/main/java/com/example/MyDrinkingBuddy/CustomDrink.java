@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+// Activity used for letting the user input the amounts for a drinks contents before processing it
+
 public class CustomDrink extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){

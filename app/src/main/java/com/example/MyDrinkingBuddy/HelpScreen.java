@@ -18,6 +18,10 @@ import com.uber.sdk.core.client.SessionConfiguration;
 
 import java.util.Collections;
 
+// This Activity is where all of the safety features are placed
+// Safety Features include Uber Integration, a link to the user's phone using pre-loaded phone numbers
+// and Parking which allows the user to access google maps to find their parking spot
+
 public class HelpScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

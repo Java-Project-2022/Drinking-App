@@ -2,6 +2,8 @@ package com.example.MyDrinkingBuddy;
 import java.util.Timer;
 import java.util.TimerTask;
 
+// Code for making calculations time-based in order for a more interactive user experience when viewing their BAC
+
 public class TimingCode {
 
     //create timer variable
